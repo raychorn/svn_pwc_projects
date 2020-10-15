@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% endblock %}
+
+		{% block js_document_ready %}
+			//$( "#encryption_type_select" ).selectmenu();
+		{% endblock %}
+
+{% block main-content %}
+   <table width="100%" border="0" bordercolor="#000000">
+	   <tr>
+		   <td width="50px">
+			   <b><nobr>Unknown Connection</nobr></b>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td colspan="3">
+			   <table width="100%">
+				   <tr>
+					   <td align="left" width="80%">
+						   <a class="ui-button ui-widget ui-corner-all" href="/">Cancel</a>
+					   </td>
+					   <td align="center">
+						   <a class="ui-button ui-widget ui-corner-all" href="/">Previous</a>
+						   &nbsp;&nbsp;
+						   <a class="ui-button ui-widget ui-corner-all" href="#">Next</a>
+						   &nbsp;&nbsp;
+					   </td>
+				   </tr>
+				</table>
+			</td>
+	   </tr>
+   </table>
+{% endblock %}
+

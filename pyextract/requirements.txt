@@ -1,0 +1,16 @@
+# apsw                 (See INSTALL.md)
+# ceODBC               (See INSTALL.md)
+# cx_Oracle            (See INSTALL.md)
+# ibm_db               (See INSTALL.md)
+# pyrfc                (See INSTALL.md)
+# wxPython-Phoenix     (See INSTALL.md)
+
+keyring==10.3.2
+packaging==16.8
+pyinstaller==3.2.1
+pypiwin32==219
+requests==2.17.3
+requests_toolbelt==0.8.0
+setuptools==30.2.0
+stopit==1.1.1
+redis==2.10.6

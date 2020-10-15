@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+		{% block js_document_ready %}
+			function do_login_with_token(token) {
+				$.post( "/handle_user_login", {'login_token' : token})
+				  .done(function( data ) {
+				  })
+				  .fail(function() {
+				  })
+				  .always(function() {
+				  });
+			}
+
+			$( "#btn_handle_user_login" ).click(function() {
+				var token = $('#login_token').val();
+				do_login_with_token(token);
+			  alert( "Click OK to continue..." );
+			});
+		{% endblock %}
+
+{% block main-content %}
+   <table width="100%" border="0" bordercolor="#000000">
+	   <tr>
+		   <td colspan="2">
+				<img src="/static/main-body1.png" width="100%"/>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td colspan="2">
+			{% include '_partial_user_login.html' %}
+		   </td>
+	   </tr>
+	   <tr>
+		   <td align="left">
+		   </td>
+		   <td align="right">
+			   <b>Extract v2.2.0</b>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td colspan="2">
+				<img src="/static/main-body2.png" width="100%"/>
+		   </td>
+	   </tr>
+   </table>
+{% endblock %}
+

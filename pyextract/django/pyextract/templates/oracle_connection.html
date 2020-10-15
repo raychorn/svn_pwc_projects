@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% endblock %}
+
+		{% block js_document_ready %}
+			var __ecfdirname__ = '{{ ecfdirname }}';
+
+			function get_rest_payload(vector) {
+				var payload = {};
+
+				payload['connection_type'] = $('#connection_type_select').selectmenu('widget').find('option:selected').val();
+				payload['connection_instance'] = $('#connection_instance_select').selectmenu('widget').find('option:selected').val();
+				payload['connection_hostname'] = $('#connection_hostname').val();
+				payload['connection_username'] = $('#connection_username').val();
+				payload['connection_portnumber'] = $('#connection_portnumber').val();
+				payload['connection_password'] = $('#connection_password').val();
+				payload['connection_systemid'] = $('#connection_systemid').val();
+				payload['ecfdirname'] = __ecfdirname__;
+				payload['connection_prefix'] = 'oracle';
+				payload['csrfmiddlewaretoken'] = '{{ csrf_token }}';
+
+
+				for (var key in vector) {
+					if (vector.hasOwnProperty(key)) {
+						payload[key] = vector[key];
+						console.log(key + " -> " + vector[key]);
+					}
+				}
+
+				console.log(JSON.stringify(payload, null, 2));
+				return payload;
+			}
+
+			function do_rest_post1(msg, func_name, payload, onloaded=null) {
+				$( "#div_status_message" ).html('<b>' + msg + '</b>');
+				$.post( "/rest/get_rest_token", {'uri' : func_name, 'payload': payload})
+				  .done(function( data ) {
+					var fname = null;
+					var status = null;
+					var exception = null;
+					try {
+						fname = data['fname'];
+						status = data['status'];
+						exception = data['exception'];
+					} catch (err) {exception = String(err)}
+					$( "#div_status_message" ).html('<font color="blue"><b>' + msg + ' done in "' + fname + '", ' + status + ' ' + exception + '.</b></font>');
+					if (onloaded) {
+						try {
+							onloaded(data['payload']);
+						} catch (err) {
+							$( "#div_status_message" ).html('<font color="red"><b>' + err + '.</b></font>');
+						}
+					}
+				  })
+				  .fail(function() {
+					$( "#div_status_message" ).html($( "#div_status_message" ).html() + '&nbsp;&nbsp;<b style="color: red">Error.</b>');
+				  })
+				  .always(function() {
+					$( "#div_status_message" ).html($( "#div_status_message" ).html() + '&nbsp;&nbsp;<b style="color: green">Done.</b>');
+				  });
+			}
+
+			$( "#connection_type_select" ).selectmenu();
+			$( "#saved_connection_select" ).selectmenu();
+			$( "#connection_instance_select" ).selectmenu();
+
+			$( "#connection_type_select" ).selectmenu({
+			   change: function( event, data ) {
+				do_rest_post1('Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			   }
+			 });
+
+			$( "#saved_connection_select" ).selectmenu({
+			   change: function( event, data ) {
+				var payload = {};
+				payload['connection'] = data.item.value;
+				payload['ecfdirname'] = __ecfdirname__;
+				payload['csrfmiddlewaretoken'] = '{{ csrf_token }}';
+				funtion on_loaded(d) {
+					alert(JSON.stringify(d, null, 2));
+				}
+				do_rest_post1('Loading...', '/rest/read_ecf_connection_file', payload, onloaded=on_loaded);
+			   }
+			 });
+
+			$( "#connection_instance_select" ).selectmenu({
+			   change: function( event, data ) {
+				do_rest_post1('Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			   }
+			 });
+
+			$('#connection_hostname').on('change', function(){
+				do_rest_post1('Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			});
+
+			$('#connection_username').on('change', function(){
+				do_rest_post1('Saving...', 'Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			});
+
+			$('#connection_portnumber').on('change', function(){
+				do_rest_post1('Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			});
+
+			$('#connection_password').on('change', function(){
+				do_rest_post1('Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			});
+
+			$('#connection_systemid').on('change', function(){
+				do_rest_post1('Saving...', '/rest/save_ecf_connection_file', get_rest_payload(vector));
+			});
+
+
+		{% endblock %}
+
+{% block main-content %}
+   <table width="100%" border="0" bordercolor="#000000">
+	   <tr>
+		   <td colspan="2" width="50px">
+			   <b><nobr>Oracle Connection</nobr></b>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td>
+			   <nobr>
+			   <b>Connection Type:</b>&nbsp;&nbsp;
+				<select name="connection_type_select" id="connection_type_select">
+				  <option selected="selected">Direct Connection</option>
+				  <option>Load Balanced Connection</option>
+				  <option>Direct Connection w/SNC</option>
+				  <option>Load Balanced w/SNC</option>
+				  <option>PWC-XTRACT (ABAP)</option>
+				</select>
+				</nobr>
+		   </td>
+		   <td>
+			   <nobr>
+			   <b>Load Saved Connection:</b>&nbsp;&nbsp;
+				<select name="saved_connection_select" id="saved_connection_select">
+					{% autoescape off %}{{ saved_connections_list }}{% endautoescape %}
+				</select>
+				</nobr>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td>
+			   <nobr>
+			   <b>Host Name:</b>&nbsp;&nbsp;
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" id="connection_hostname" name="connection_hostname" maxlength="64" value="{{ connection_hostname }}">
+				</div>
+				</nobr>
+		   </td>
+		   <td>
+			   <nobr>
+			   <b>User:</b>&nbsp;&nbsp;
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" id="connection_username" name="connection_username" maxlength="64" value="{{ connection_username }}">
+				</div>
+				</nobr>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td>
+			   <nobr>
+			   <b>Port Number:</b>&nbsp;&nbsp;
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" id="connection_portnumber" name="connection_portnumber" maxlength="64" value="{{ connection_portnumber }}">
+				</div>
+				</nobr>
+		   </td>
+		   <td>
+			   <nobr>
+			   <b>Password:</b>&nbsp;&nbsp;
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" id="connection_password" name="connection_password" maxlength="64" value="{{ connection_password }}">
+				</div>
+				</nobr>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td>
+			   <nobr>
+			   <b>Instance:</b>&nbsp;&nbsp;
+				<select name="connection_instance_select" id="connection_instance_select">
+				  <option selected="selected">System ID</option>
+				  <option>Service Name</option>
+				</select>
+				</nobr>
+		   </td>
+		   <td>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td>
+			   <nobr>
+			   <b>Value:</b>&nbsp;&nbsp;
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" id="connection_systemid" name="connection_systemid" maxlength="64" value="{{ connection_systemid }}">
+				</div>
+				</nobr>
+		   </td>
+		   <td>
+		   </td>
+	   </tr>
+	   <tr style="display: none">
+		   <td>
+		   </td>
+		   <td>
+			   <nobr>
+				<label for="checkbox-nested-1">Save Connection As
+				  <input type="checkbox" name="save_connection_as_checkbox" id="save_connection_as_checkbox">
+				</label>
+				   &nbsp;&nbsp;
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" name="connection_save_as" maxlength="64">
+				</div>
+				   &nbsp;&nbsp;
+				<label for="checkbox-nested-1">Save Password
+				  <input type="checkbox" name="save_password_checkbox" id="save_password_checkbox">
+				</label>
+				</nobr>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td colspan="2">
+			   <table width="100%">
+				   <tr>
+					   <td align="left" width="80%">
+						   <a class="ui-button ui-widget ui-corner-all" href="/preview_ecf_file2?ecf_file={{ ecf_file }}">Cancel</a>
+					   </td>
+					   <td align="center">
+						   <a class="ui-button ui-widget ui-corner-all" href="/">Previous</a>
+						   &nbsp;&nbsp;
+						   <a class="ui-button ui-widget ui-corner-all" href="#">Next</a>
+						   &nbsp;&nbsp;
+					   </td>
+				   </tr>
+				</table>
+			</td>
+	   </tr>
+	   <tr>
+		   <td colspan="2">
+			   <table width="100%">
+				   <tr>
+					   <td align="left" width="100%">
+						   <div id="div_status_message"></div>
+					   </td>
+				   </tr>
+				</table>
+			</td>
+	   </tr>
+   </table>
+{% endblock %}
+

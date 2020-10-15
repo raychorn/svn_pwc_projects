@@ -1,0 +1,47 @@
+	<table width="100%" border="0" bordercolor="#000000">
+	   <tr>
+		   <td align="left" width="80%">
+			   <b><nobr>{% autoescape off %}{{ the_drives }}{% endautoescape %}</nobr></b>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td align="left" width="80%">
+			   <b><nobr>Choose an ECF: {% autoescape off %}{{ the_directory }}{% endautoescape %}</nobr></b>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td>
+			   <table width="100%">
+				   <tr bgcolor="#B8B8B8">
+					   <td align="center">
+						   <b><nobr>File Name</nobr></b>
+					   </td>
+					   <td align="center">
+						   <b><nobr>File Details</nobr></b>
+					   </td>
+				   </tr>
+				   {% autoescape off %}{{ the_contents }}{% endautoescape %}
+				</table>
+			</td>
+	   </tr>
+{% if isnotpartial %}
+	   <tr>
+		   <td>
+			   <table width="100%">
+				   <tr>
+					   <td align="left">
+						   <a class="ui-button ui-widget ui-corner-all" href="/">Close</a>
+						   &nbsp;&nbsp;
+					   </td>
+				   </tr>
+				</table>
+			</td>
+	   </tr>
+{% else %}
+	   <tr>
+		   <td>
+			   <hr align="left" width="100%">
+			</td>
+	   </tr>
+{% endif %}
+   </table>

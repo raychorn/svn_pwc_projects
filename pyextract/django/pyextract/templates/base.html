@@ -1,0 +1,179 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+{% now "Y" as current_year %}
+<html xmlns="http://www.w3.org/1999/xhtml"
+    dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}"
+    xml:lang="{% firstof LANGUAGE_CODE 'en' %}"
+    lang="{% firstof LANGUAGE_CODE 'en' %}">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %} pyExtract, All Rights Reserved. (&copy;{{ current_year }})</title>
+	
+	<!-- https://www.w3schools.com/howto/howto_css_icon_buttons.asp -->
+	<link rel="stylesheet" href="/static/font-awesome.min.css">
+	
+	<style type="text/css">
+		.autowidthinput {
+			width: 98%; /* force to expand to container's width */ 
+			border: 1px solid #DFDFDF;  
+			padding: 0 0px;
+			margin: 0 0px; /* negative margin = border-width + horizontal padding */ 
+
+			/* demo only customizations */
+			border-radius: 0px;
+			box-shadow: 0 0 0px black inset;
+		}   
+
+		.autowidthinput20 {
+			width: 20%; /* force to expand to container's width */ 
+			border: 1px solid #DFDFDF;  
+			padding: 0 0px;
+			margin: 0 0px; /* negative margin = border-width + horizontal padding */ 
+
+			/* demo only customizations */
+			border-radius: 0px;
+			box-shadow: 0 0 0px black inset;
+		}
+		
+	.outer {
+		   outline: 2px solid #CCC;
+		   border: 1px solid #999;
+		   background-color: #CECECE;
+			text-align: left;
+		   }
+		
+	.greenbox
+		{        
+			BORDER-RIGHT: green 3px solid;
+			BORDER-TOP: green 1px solid;
+			BORDER-LEFT: green 1px solid;
+			BORDER-BOTTOM: green 3px solid;
+			BACKGROUND-COLOR: white;
+		}
+
+	</style>
+    {% block css %}
+      <!--[if IE]>
+      <![endif]-->
+    {% endblock %}
+  {% block js-includes %}
+    <script src="/static/jquery-1.12.4.js"></script>
+    <script src="/static/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  {% endblock %}
+
+    {% block extra-head %}
+		<link rel="stylesheet" href="/static/jquery-ui-1.12.1/jquery-ui.min.css">
+	{% endblock %}
+
+    {% block js %}
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			  var uuid4 = function () {
+				//// return uuid of form xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+				var uuid = '', ii;
+				for (ii = 0; ii < 32; ii += 1) {
+				  switch (ii) {
+				  case 8:
+				  case 20:
+					uuid += '-';
+					uuid += (Math.random() * 16 | 0).toString(16);
+					break;
+				  case 12:
+					uuid += '-';
+					uuid += '4';
+					break;
+				  case 16:
+					uuid += '-';
+					uuid += (Math.random() * 4 | 8).toString(16);
+					break;
+				  default:
+					uuid += (Math.random() * 16 | 0).toString(16);
+				  }
+				}
+				return uuid;
+			  };
+			
+			function getUrlVars(href=null) {
+				var vars = {};
+				var __href__ = ((href) ? href : window.location.href);
+				var parts = __href__.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			}
+			
+			function getUrlParam(parameter, defaultvalue, href=null){
+				var urlparameter = defaultvalue;
+				if(window.location.href.indexOf(parameter) > -1){
+					urlparameter = getUrlVars(href)[parameter];
+					}
+				return urlparameter;
+			}
+			
+			var parser = document.createElement('a');
+			parser.href = window.location.href; 
+
+			//parser.protocol; // => "http:"
+			//parser.hostname; // => "example.com"
+			//parser.port;     // => "3000"
+			//parser.pathname; // => "/pathname/"
+			//parser.search;   // => "?search=test"
+			//parser.hash;     // => "#hash"
+			//parser.host;     // => "example.com:3000"
+			
+			var cb = uuid4();
+			
+			var __cb__ = getUrlParam('cb', null);
+			if (!__cb__) {
+				window.location.href = parser.protocol + '//' + parser.host + parser.pathname + '?cb=' + cb;
+			}
+			
+			function cache_bust_href_for(obj) {
+				var __cb__ = getUrlParam('cb', null, href=obj.href);
+				if ( (!__cb__) || (__cb__ != cb) ) {
+					parser.href = obj.href;
+					var v = getUrlVars(href=obj.href);
+
+					var extras = ''
+					for (var key in v) {
+						if (key != 'cb') {
+							if (v.hasOwnProperty(key)) {
+								extras = extras + '&' + key + '=' + v[key];
+							}
+						}
+					}
+
+					obj.href = parser.protocol + '//' + parser.host + parser.pathname + '?cb=' + cb + extras;
+				}
+			}
+			
+			$('a').each(function() {
+				cache_bust_href_for(this);
+			});
+			
+			$('button').each(function() {
+				cache_bust_href_for(this);
+			});
+			
+			$("span .greenbox").each(function () {
+      			//$(this).effect("pulsate", { times:3 }, 2000);
+			});
+			
+			console.log( "document loaded" );
+		  	console.log('(2)' + __cb__);
+
+			{% block js_document_ready %}
+			{% endblock %}
+		});	
+	</script>
+	{% endblock %}
+ 
+</head>
+
+<body>
+    {% block main-content %}
+    {% endblock %}
+</body>
+</html>

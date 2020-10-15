@@ -1,0 +1,141 @@
+﻿10000 Act assignment modelE
+10001 Invoice             E
+10002 Reverse credit memo E
+10003 Bank charges        E
+10004 Other receivables   E
+10005 Outgoing payment    E
+10006 Payment difference  E
+10007 Other clearing      E
+10008 Payment clearing    E
+10009 Special G/L debit   E
+100095Incoming Client FundE
+100096Designated Funds    E
+10009AReverse down paymentE
+10009BB/exch. receivables E
+10009CIS-RE rev. rent dep.E
+10009DPPD Transportation  E
+10009ERev.reser.f.bad debtE
+10009FDown payment requestE
+10009GGuarantee           E
+10009HSecurity deposit    E
+10009IVendor debit        E
+10009JIS-RE Ad.pmnt.req OCE
+10009KIS-RE Rev. ad.pmt OCE
+10009LLetter of Credit    E
+10009PPayment request     E
+10009QB/e residual risk   E
+10009RB/e payment request E
+10009SCheck/bill of exch. E
+10009TReverse down paymentE
+10009UIS-RE Rev.ad.pmt SBRE
+10009Vcontainer           E
+10009WBill of exchange    E
+10009Xdebit               E
+10009Yclave Y             E
+10009ZInterest due        E
+1000A CH Bill.doc. Deb    E
+1000B CH Cancel.Cred.memoDE
+1000C CH Clearing Deb     E
+1000X CH Clearing Cred    E
+1000Y CH Credit memo Cred E
+1000Z CH Cancel.BillDocDebE
+10011 Credit memo         E
+10012 Reverse invoice     E
+10013 Reverse charges     E
+10014 Other payables      E
+10015 Incoming payment    E
+10016 Payment difference  E
+10017 Other clearing      E
+10018 Payment clearing    E
+10019 Special G/L credit  E
+100195Outgoing Client FundE
+100196Designated Funds    E
+10019ADown pmnt received  E
+10019BReverse b/e recvble E
+10019CIS-RE Rent deposit  E
+10019DPPD Transportation  E
+10019EReserve for bad debtE
+10019F                    E
+10019GReset guarantee     E
+10019HReverse sec. depositE
+10019IVendor credit       E
+10019JIS-RE Rev.AdPmtReqOCE
+10019KIS-RE Ad.pmnt OC    E
+10019LLetter of Credit    E
+10019P                    E
+10019SReverse check/B of EE
+10019TDown payment        E
+10019UIS-RE Ad.pmt SB rentE
+10019VContainer           E
+10019WReverse b/e recvble E
+10019Xcredit              E
+10019Yclave Z             E
+10019ZReverse interest dueE
+1001A CH Cancel.Bill.docDeE
+1001B CH Credit memo Deb  E
+1001C CH Credit memo Deb  E
+1001X CH Clearing Cred    E
+1001Y CH Cancel.Cr.memo C E
+1001Z CH Bill.doc. Cred   E
+10021 Credit memo         E
+10022 Reverse invoice     E
+10024 Other receivables   E
+10025 Outgoing payment    E
+10026 Payment difference  E
+10027 Clearing            E
+10028 Payment clearing    E
+10029 Special G/L debit   E
+10029ADown payment made   E
+10029BDown pmnt fin. assetE
+10029CVirement à échéance E
+10029DDebit discount      E
+10029GReset guarantee     E
+10029HReverse sec. depositE
+10029IInvest. down paymentE
+10029MNo.of tangble assetsE
+10029P                    E
+10029SReverse check/b/e   E
+10029VDown payment stocks E
+10029WReverse b/e payable E
+10029ZDwn paymt for order E
+10031 Invoice             E
+10032 Reverse credit memo E
+10034 Other payables      E
+10035 Incoming payment    E
+10036 Payment difference  E
+10037 Other clearing      E
+10038 Payment clearing    E
+10039 Special G/L credit  E
+10039AReverse down paymentE
+10039BRev.dwn pmnt fin.astE
+10039CVirement à échéance E
+10039DCredit discount     E
+10039FDown payment requestE
+10039GGuarantee           E
+10039HSecurity deposit    E
+10039IRev.invest.down pmntE
+10039MReverse mat.down pmtE
+10039PPayment request     E
+10039SCheck/bill of exch. E
+10039WBill of exch.payableE
+10039ZReverse down paymentE
+10040 Debit entry         E
+10050 Credit entry        E
+10070 Debit asset         E
+10075 Credit asset        E
+10080 Inventory taking    E
+10081 Costs               E
+10082 Inventory differenceE
+10083 Price difference    E
+10084 Consumption         E
+10085 Change in stock     E
+10086 GR/IR debit         E
+10089 Stock inwrd movementE
+10090 Inventory taking    E
+10091 Costs               E
+10092 Inventory differenceE
+10093 Price difference    E
+10094 Consumption         E
+10095 Change in stock     E
+10096 GR/IR credit        E
+10099 Stock outwd movementE

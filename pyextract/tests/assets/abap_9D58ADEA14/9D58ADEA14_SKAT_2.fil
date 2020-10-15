@@ -1,0 +1,100 @@
+﻿100E BANK0010502200Loans to com. org. fLoans and advances to commercial organisations forLOANS AND ADVANCES TO COM
+100E BANK0010601100Bonds governmental  Bonds from governmental institutions              BONDS FROM GOVERNMENTAL I
+100E BANK0010601200Bonds from other conBonds from other consumers                        BONDS FROM OTHER CONSUMER
+100E BANK0020101200Non-int-bearing bankNon-interest-bearing deposits from other banks    NON-INTEREST-BEARING DEPO
+100E BANK0020102200Non-int.-bearing depNon-interest-bearing deposits from depositors     NON-INTEREST-BEARING DEPO
+100E BANK0020200000Promisory Notes     Promisory Notes                                   PROMISORY NOTES
+100E BANK0020301000Short-term liab.    Short-term liabilities                            SHORT-TERM LIABILITIES
+100E BANK0020302000Other trading liab. Other trading liabilities                         OTHER TRADING LIABILITIES
+100E BANK0020401000Tax provisions      Tax provisions                                    TAX PROVISIONS
+100E BANK0020402000Provisions f. sec.b.Provisions for securities business                PROVISIONS FOR SECURITIES
+100E BANK0020403000Other provisions    Other provisions                                  OTHER PROVISIONS
+100E BANK0020501000Preference stock    Preference stock                                  PREFERENCE STOCK
+100E BANK0020502000Ordinary stock      Ordinary stock                                    ORDINARY STOCK
+100E BANK0020503000For.cur.trans. adjusForeign currency translation adjustments          FOREIGN CURRENCY TRANSLAT
+100E BANK0030100000Trust activities    Trust activities                                  TRUST ACTIVITIES
+100E BANK0030200000Other commitments   Other commitments                                 OTHER COMMITMENTS
+100E BANK0050102000Int-bearing in banksInterest-bearing deposits in banks                INTEREST-BEARING DEPOSITS
+100E BANK0050103000Int/dividen inc. secInterest and dividend income on securities        INTEREST AND DIVIDEND INC
+100E BANK0050104000Federal funs sold   Federal funs sold                                 FEDERAL FUNS SOLD
+100E BANK0050201000Comm. inc. SecuritieCommission income Securities business             COMMISSION INCOME SECURIT
+100E BANK0050202000Comm. inc. Asset ManCommission income - Asset management              COMMISSION INCOME - ASSET
+100E BANK0050203000Comm.inc. loan proc.Commission income loan processing                 COMMISSION INCOME LOAN PR
+100E BANK0050204000Comm.inc. payment   Commission income payment                         COMMISSION INCOME PAYMENT
+100E BANK0050301000Trading Income Int. Trading Income interest related                   TRADING INCOME INTEREST R
+100E BANK0050302000Trading Income Equi.Trading Income equities related                   TRADING INCOME EQUITIES R
+100E BANK0050303000Other trading incomeOther trading income                              OTHER TRADING INCOME
+100E BANK0050501000Profits sale build. Profits on the sale of buildings                  PROFITS ON THE SALE OF BU
+100E BANK0050502000Profits other sales Profits on other sales                            PROFITS ON OTHER SALES
+100E BANK0050503000Foreign exch.gains  Foreign exchange gains                            FOREIGN EXCHANGE GAINS
+100E BANK0050504000Profit on write ups Profit on write ups                               PROFIT ON WRITE UPS
+100E BANK0050505100Income from revaluatIncome from revaluation in USD                    INCOME FROM REVALUATION I
+100E BANK0050505200Income from revaluatIncome from revaluation in GBP                    INCOME FROM REVALUATION I
+100E BANK0060501000Wages / salary      Wages / salary as operating expenses              WAGES / SALARY AS OPERATI
+100E BANK0060502000Employee benefits   Employee benefits                                 EMPLOYEE BENEFITS
+100E BANK0060503000Deprec. on equipmentDepreciation on equipment                         DEPRECIATION ON EQUIPMENT
+100E BANK0060504000Misc. oper. expensesMiscellaneous operating expenses                  MISCELLANEOUS OPERATING E
+100E BANK0060505100Expenses reval. USD Expenses for revaluation in USD                   EXPENSES FOR REVALUATION
+100E BANK0060505200Expenses reval. GBP Expenses for revaluation in GBP                   EXPENSES FOR REVALUATION
+100E BANK0090000000Retained Earnings   Retained Earnings                                 RETAINED EARNINGS
+100E BKMG0001010131Cash Reserve        Cash Reserve                                      CASH RESERVE
+100E BKMG0001010231Values in CollectionValues Undergoing Collection                      VALUES UNDERGOING COLLECT
+100E BKMG0001010232Fund.:IntCashDesk OCFunding: Internal Cash Desk (Object Currency)     FUNDING: INTERNAL CASH DE
+100E BKMG0001010331Int. Cash Desk (OC) Internal Cash Desk (OC)                           INTERNAL CASH DESK (OC)
+100E BKMG0001010332Fund.:IntCashDeskCCCFunding:Internal Cash Desk (Company Code Currency)FUNDING:INTERNAL CASH DES
+100E BKMG0001010431Int. Cash Desk (CCC)Internal Cash Desk (CoCode Currency)              INTERNAL CASH DESK (COCOD
+100E BKMG0001011000Bank Account Number Bank Account Number                               BANK ACCOUNT NUMBER
+100E BKMG0001011100Bank Clearing Acct  Bank Clearing Account                             BANK CLEARING ACCOUNT
+100E BKMG0001011200IFX Adj. Acct FI-GL IFX Adjustment Account: FI-GL                     IFX ADJUSTMENT ACCOUNT: F
+100E BKMG0001020131Receivables         Receivables                                       RECEIVABLES
+100E BKMG0001020221Clrg Rec. from Govt Clearing Receivables from Government              CLEARING RECEIVABLES FROM
+100E BKMG0001020321Variation Margin    Variation Margin                                  VARIATION MARGIN
+100E BKMG0001020421Subscribed Cap.StockSubscribed Capital Stock                          SUBSCRIBED CAPITAL STOCK
+100E BKMG0001020521Trustee Assets      Trustee Assets                                    TRUSTEE ASSETS
+100E BKMG0001020621Accrued/Def'd Items Accrued and deferred items                        ACCRUED AND DEFERRED ITEM
+100E BKMG0001021000FI-AR Receivables   FI-AR Receivables                                 FI-AR RECEIVABLES
+100E BKMG0001021100IFX Adj. Acct FI-AR IFX Adjustment Account FI-AR                      IFX ADJUSTMENT ACCOUNT FI
+100E BKMG0001040111Derivative Hedge    Derivative Hedge Accounting                       DERIVATIVE HEDGE ACCOUNTI
+100E BKMG0001040211FV Changes: Hedge   Fair Value Changes of Hedge Items                 FAIR VALUE CHANGES OF HED
+100E BKMG0001050121Debt Instrument     Debt Instruments of PSEs and Bills of Exchange    DEBT INSTRUMENTS OF PSES
+100E BKMG0001050221Fixed-Int.SecuritiesBonds and Fixed-Interest Securities               BONDS AND FIXED-INTEREST
+100E BKMG0001050321Non-Interest Secur. Shares and Other Non-Interest Securities          SHARES AND OTHER NON-INTE
+100E BKMG0001050421Investments         Investments                                       INVESTMENTS
+100E BKMG0001050531Shares in Affil.Ent.Shares in Affiliated Enterprises                  SHARES IN AFFILIATED ENTE
+100E BKMG0001050631Own Shares          Own Shares / Proportionate Shares                 OWN SHARES / PROPORTIONAT
+100E BKMG0001050711Financial Assets HFTFinancial Assets (Held for Trading)               FINANCIAL ASSETS (HELD FO
+100E BKMG0001050811Financial Assets DFVFinancial Assets (Designated at Fair Value)       FINANCIAL ASSETS (DESIGNA
+100E BKMG0001050911Fin. Assets (AFS)   Financial Assets (Available for Sale)             FINANCIAL ASSETS (AVAILAB
+100E BKMG0001051011Financial Assets HTMFinancial Assets (Held to Maturity)               FINANCIAL ASSETS (HELD TO
+100E BKMG0001051111Financial Assets LARFinancial Assets (Loans and Receivables)          FINANCIAL ASSETS (LOANS A
+100E BKMG0001061000Fixed Assets: FI-AA Fixed Assets: FI-AA                               FIXED ASSETS: FI-AA
+100E BKMG0001061100IFX Adj. Acct FI-AA IFX Adjustment Account: FI-AA                     IFX ADJUSTMENT ACCOUNT: F
+100E BKMG0001080131Intangible Assets   Intangible Assets                                 INTANGIBLE ASSETS
+100E BKMG0001090131Prop.Plant.&Eqp     Property, Plant, and Equipment                    PROPERTY, PLANT, AND EQUI
+100E BKMG0001100111Tax Assets          Tax Assets                                        TAX ASSETS
+100E BKMG0001110211Other Assets        Other Assets                                      OTHER ASSETS
+100E BKMG0001510132Funding: Book Val.  Funding: Book Value                               FUNDING: BOOK VALUE
+100E BKMG0002010131EqtyContr.:CntlBanksEquity Contributions by Central Banks             EQUITY CONTRIBUTIONS BY C
+100E BKMG0002010231Vals in Retirement  Values Undergoing Retirement                      VALUES UNDERGOING RETIREM
+100E BKMG0002010531Fund:Gen. Bank RisksFund for General Bank Risks                       FUND FOR GENERAL BANK RIS
+100E BKMG0002010621Accrued/Def'd Items Accrued and deferred items                        ACCRUED AND DEFERRED ITEM
+100E BKMG0002020131Payables            Payables                                          PAYABLES
+100E BKMG0002020221Securitized PayablesSecuritized Payables                              SECURITIZED PAYABLES
+100E BKMG0002020331Trustee Payables    Trustee Payables                                  TRUSTEE PAYABLES
+100E BKMG0002020411Payables (HFT)      Payables (Held for Trading)                       PAYABLES (HELD FOR TRADIN
+100E BKMG0002020511Payables (DFV)      Payables (Designated at Fair Value)               PAYABLES (DESIGNATED AT F
+100E BKMG0002020611Payables at AC      Payables Valuated at Amortized Cost               PAYABLES VALUATED AT AMOR
+100E BKMG0002021000Payables: FI-AP     Payables: FI-AP                                   PAYABLES: FI-AP
+100E BKMG0002021100IFX Adj. Acct: FI-APIFX Adjustment Account: FI-AP                     IFX ADJUSTMENT ACCOUNT: F
+100E BKMG0002040111Derivative Hedge    Derivative Hedge Accounting                       DERIVATIVE HEDGE ACCOUNTI
+100E BKMG0002040211FV Changes: Hedge   Fair Value Changes of Hedge Items                 FAIR VALUE CHANGES OF HED
+100E BKMG0002050131Provisions          Provisions                                        PROVISIONS
+100E BKMG0002050221SpecItms EqtyPortionSpecial Items with an Equity Portion              SPECIAL ITEMS WITH AN EQU
+100E BKMG0002080121Subordinated Liab.  Subordinated Liabilities                          SUBORDINATED LIABILITIES
+100E BKMG0002080221Equity ProfSharRightEquity from Profit Sharing Right                  EQUITY FROM PROFIT SHARIN
+100E BKMG0002100111Tax Liabilities     Tax Liabilities                                   TAX LIABILITIES
+100E BKMG0002110131Other Payables      Other Payables                                    OTHER PAYABLES
+100E BKMG0002110211Pybls w.Trfrd AssetsPayables with Transferred Assets                  PAYABLES WITH TRANSFERRED
+100E BKMG0002110321Contingent Liab.    Contingent Liabilities                            CONTINGENT LIABILITIES
+100E BKMG0002110421Other Liabilities   Other Payables                                    OTHER PAYABLES
+100E BKMG0003010131Subscribed Equity   Subscribed Equity                                 SUBSCRIBED EQUITY

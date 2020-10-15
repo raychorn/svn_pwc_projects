@@ -1,0 +1,78 @@
+﻿* PwCXTRACT version:PwCXTRACT Version 4.0
+* Property of PricewaterhouseCoopers WPG AG
+Background job for ID: 138DA2DF4F
+The ID is based on system ID, client, date and time.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This logfile contains:
+1. List of all handled files along with status updates
+2. Log of errors which occured during execution
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Open log
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_BKPF_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_BSEG_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_T001_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_TBSLT_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_TSTCT_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_ADRP_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_SKA1_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_USR02_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_TTYPT_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_GLT0_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_T003_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_USR21_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_T009_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_SKAT_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_TJ01T_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_FAGLFLEXT_1.fil
+Open file/usr/sap/trans/tmp/ZTMP/138DA2DF4F_T003T_1.fil
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_BKPF_1.fil
+--> 40 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_BSEG_1.fil
+--> 85 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_T001_1.fil
+--> 158 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_TBSLT_1.fil
+--> 141 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_TSTCT_1.fil
+--> 94.747 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_ADRP_1.fil
+--> 318.842 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_SKA1_1.fil
+--> 14.252 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_USR02_1.fil
+--> 13.528 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_TTYPT_1.fil
+--> 131 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_GLT0_1.fil
+--> 0 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_T003_1.fil
+--> 58 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_USR21_1.fil
+--> 13.754 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_T009_1.fil
+--> 23 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_SKAT_1.fil
+--> 27.328 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_TJ01T_1.fil
+--> 1.972 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_FAGLFLEXT_1.fil
+--> 67.884 Zeilen
+Closing file /usr/sap/trans/tmp/ZTMP/138DA2DF4F_T003T_1.fil
+--> 74 Zeilen
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Error Log:
+Error reading metadata for:
+Table:REQUESTID
+Error reading metadata for:
+Table:STRIPEKEY
+Field:TestSetId
+
+Error reading metadata for:
+Table:SCHEMA
+Field:SAP_Test_Schema
+
+
+No lines extracted for TableGLT0

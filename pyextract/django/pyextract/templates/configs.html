@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% endblock %}
+
+		{% block js_document_ready %}
+			$( "#encryption_type_select" ).selectmenu();
+			$( "#sftp_upload_location_select" ).selectmenu();
+			$( "#lfu_upload_location_select" ).selectmenu();
+			$( "#sftp_upload_port_select" ).selectmenu();
+			$( "#logging_level_select" ).selectmenu();
+			$( "#auto_upload_select" ).selectmenu();
+		{% endblock %}
+
+{% block main-content %}
+   <table width="100%" border="0" bordercolor="#000000">
+	   <tr>
+		   <td width="50px">
+			   <b><nobr>Working Directory:</nobr></b>
+		   </td>
+		   <td width="*">
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" name="working_directory" maxlength="128">
+				</div>
+		   </td>
+		   <td width="50px">
+			   <a class="ui-button ui-widget ui-corner-all" href="#">Browse</a>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td width="50px">
+			   <b><nobr>SAP Netweaver SDK:</nobr></b>
+		   </td>
+		   <td width="*">
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" name="sap_netweaver_sdk_directory" maxlength="128">
+				</div>
+		   </td>
+		   <td width="50px">
+			   <a class="ui-button ui-widget ui-corner-all" href="#">Browse</a>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td width="50px">
+			   <b><nobr>Oracle Client:</nobr></b>
+		   </td>
+		   <td width="*">
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" name="orcle_client_directory" maxlength="128">
+				</div>
+		   </td>
+		   <td width="50px">
+			   <a class="ui-button ui-widget ui-corner-all" href="#">Browse</a>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td width="50px">
+			   <b><nobr>IBM DB2 Driver:</nobr></b>
+		   </td>
+		   <td width="*">
+				<div class="input_wrap">
+				   <input class="autowidthinput" type="text" name="ibm_db2_driver_directory" maxlength="128">
+				</div>
+		   </td>
+		   <td width="50px">
+			   <a class="ui-button ui-widget ui-corner-all" href="#">Browse</a>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td colspan="3">
+			   <table width="100%">
+				   <tr>
+					   <td>
+						   <b><nobr>Advanced Options</nobr></b>
+					   </td>
+				   </tr>
+				   <tr>
+					   <td bgcolor="#D2D0D0">
+						   <table width="100%">
+							   <tr>
+								   <td align="left" width="100px">
+									   <b><nobr>Encryption Type:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<select name="encryption_type_select" id="encryption_type_select">
+										  <option selected="selected">AES-256</option>
+										  <option>AES-128</option>
+										  <option>None</option>
+										</select>									   
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>SFTP Upload Location:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<select name="sftp_upload_location_select" id="sftp_upload_location_select">
+										  <option selected="selected">DEV</option>
+										  <option>DEVSET-WEST</option>
+										  <option>QA</option>
+										  <option>QA2</option>
+										  <option>QA3-AU</option>
+										  <option>QA3-INT</option>
+										  <option>QA3-INT-WEST</option>
+										  <option>STAGE</option>
+										  <option>STAGE-CENTRAL</option>
+										  <option>PROD-WEST</option>
+										  <option>PROD-CENTRAL</option>
+										</select>									   
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>LFU Upload Location:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<select name="lfu_upload_location_select" id="lfu_upload_location_select">
+										  <option selected="selected">DEV-EAST</option>
+										  <option>DEV-WEST</option>
+										  <option>DEV-CENTRAL</option>
+										  <option>QA-EAST</option>
+										  <option>QA-WEST</option>
+										  <option>QA-CENTRAL</option>
+										  <option>QA2-EAST</option>
+										  <option>QA2-WEST</option>
+										  <option>QA2-CENTRAL</option>
+										  <option>QA3-EAST</option>
+										  <option>QA3-WEST</option>
+										  <option>QA3-CENTRAL</option>
+										  <option>INT-EAST</option>
+										  <option>INT-WEST</option>
+										  <option>INT-CENTRAL</option>
+										  <option>STAGE-EAST</option>
+										  <option>STAGE-WEST</option>
+										  <option></option>
+										  <option>STAGE-CENTRAL</option>
+										  <option>PROD-EAST</option>
+										  <option>PROD-WEST</option>
+										  <option>PROD-CENTRAL</option>
+										</select>									   
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Non-SAP Rows Per Request:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="non_sap_rows_per_request_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>SAP Rows Per Request:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="sap_rows_per_request_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Max Requests in Memory:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="max_requests_in_memory_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Max Writer Wait Time:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="max_writer_wait_time_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>SFTP Upload Port:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<select name="sftp_upload_port_select" id="sftp_upload_port_select">
+										  <option selected="selected">22</option>
+										  <option>52222</option>
+										</select>									   
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Logging Level:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<select name="logging_level_select" id="logging_level_select">
+										  <option selected="selected">INFO</option>
+										  <option>DEBUG</option>
+										</select>									   
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>SAP Batch Size:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="sap_batch_size_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Working Directory:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput" type="text" name="working_directory_txt" maxlength="128">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>SAP Netweaver SDK:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput" type="text" name="sap_sdk_folder_txt" maxlength="128">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Oracle Client:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput" type="text" name="oracle_client_folder_txt" maxlength="128">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>IBM DB2 Driver</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput" type="text" name="ibm_dll_folder_txt" maxlength="128">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Auto Upload Enabled:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<select name="auto_upload_select" id="auto_upload_select">
+										  <option selected="selected">No</option>
+										  <option>Yes</option>
+										</select>									   
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Max Data Read Threads:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="max_readers_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+							   <tr>
+								   <td>
+									   <b><nobr>Rename Wait:</nobr></b>
+								   </td>
+								   <td align="left" width="*">
+										<div class="input_wrap">
+										   <input class="autowidthinput20" type="text" name="rename_wait_txt" maxlength="10">
+										</div>
+								   </td>
+							   </tr>
+						   </table>
+					   </td>
+				   </tr>
+			   </table>
+		   </td>
+	   </tr>
+	   <tr>
+		   <td colspan="3">
+			   <table width="100%">
+				   <tr>
+					   <td align="left" width="80%">
+						   <a class="ui-button ui-widget ui-corner-all" href="manage_saved_connections">Manage Saved Connections</a>
+					   </td>
+					   <td align="center">
+						   <a class="ui-button ui-widget ui-corner-all" href="/">Close</a>
+						   &nbsp;&nbsp;
+						   <a class="ui-button ui-widget ui-corner-all" href="#">Apply</a>
+						   &nbsp;&nbsp;
+					   </td>
+				   </tr>
+				</table>
+			</td>
+	   </tr>
+   </table>
+{% endblock %}
+

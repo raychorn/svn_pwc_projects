@@ -1,0 +1,18 @@
+{
+	"AT&T": "number@txt.att.net", 
+	"T-Mobile": "number@tmomail.net",
+	"Verizon": "number@vtext.com",
+	"Sprint": "number@messaging.sprintpcs.com",
+	"Virgin Mobile": "number@vmobl.com",
+	"Tracfone": "number@mmst5.tracfone.com",
+	"Metro PCS": "number@mymetropcs.com",
+	"Boost Mobile": "number@sms.myboostmobile.com",
+	"Cricket": "number@sms.cricketwireless.net",
+	"Republic Wireless": "number@text.republicwireless.com",
+	"Google Fi (Project Fi)": "number@msg.fi.google.com",
+	"U.S. Cellular": "number@email.uscc.net",
+	"Ting": "number@message.ting.com",
+	"Consumer Cellular": "number@mailmymobile.net",
+	"C-Spire": "number@cspire1.com",
+	"Page Plus": "number@vtext.com"
+}

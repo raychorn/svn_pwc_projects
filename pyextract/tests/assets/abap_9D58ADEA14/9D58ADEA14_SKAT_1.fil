@@ -1,0 +1,100 @@
+﻿100E 9999DAVE      Test GL Account     Test GL Account ( long text )                     TEST GL ACCO
+100E AAAA0000000100Test G/L Account    Test G/L Account                                  TEST G/L ACC
+100E AAAA0000011010account             account                                           ACCOUNT
+100E AAAA0000012300Joe's Ballbearings  Joe's Ballbearings                                JOE'S BALLBE
+100E AAAA0000100000DM Petty Cash       DM Petty Cash                                     DM PETTY CAS
+100E AAAA0000113100Citibank            Citibank                                          CITIBANK
+100E AAAA0000113101Citi (Outg.checks)  Citibank (Outgoing Checks)                        CITIBANK (OU
+100E AAAA0000113109Citibank-clear-in   Citibank - clearing customer payments             CITIBANK - C
+100E AAAA0000113110German Bans         German Bans                                       GERMAN BANS
+100E AAAA0000113150bla                 blank                                             BLANK
+100E AAAA0000113160Germano Banko       Germano Banko                                     GERMANO BANK
+100E AAAA0000113200Test1               Test1                                             TEST1
+100E AAAA0000113201Dreba               Dreba                                             DREBA
+100E AAAA0000154000Input VAT (FRG)     Input value-added tax (Fed. Republic of Germany)  INPUT VALUE-
+100E AAAA0000159010Input VAT-other cleaInput VAT - other clearing                        INPUT VAT -
+100E AAAA0000169900Liabilities consignmConsignment liabilities                           CONSIGNMENT
+100E AAAA0000170010VAT clearing        Clear VAT from a customer down payment            CLEAR VAT FR
+100E AAAA0000175000VAT payable         VAT payable                                       VAT PAYABLE
+100E AAAA0000191100GR/IR ReconciliationGR/IR Reconciliation Account                      GR/IR RECONC
+100E AAAA0000193000Clear vendor disc.  Clear vendor cash discount                        CLEAR VENDOR
+100E AAAA0000193001Dietmars Special    Ausziffern, Reorg, Löschen                        AUSZIFFERN,
+100E AAAA0000194003Clear w/Co.Code 0003Clearing with Company Code 0003                   CLEARING WIT
+100E AAAA0000194013Clear w/0003 Co.CodeClearing with Company Code 0003                   CLEARING WIT
+100E AAAA0000231000Price Differences   Price Differences Account                         PRICE DIFFER
+100E AAAA0000275300Revenue - bill chrgsRevenue - bill of exchange bank fees to customer  REVENUE - BI
+100E AAAA0000280020Rounding-off Diff   Rounding-off Differences                          ROUNDING-OFF
+100E AAAA0000400000Raw material expenseRaw material expense - others                     RAW MATERIAL
+100E AAAA0000400100Consumption Account Consumption Account                               CONSUMPTION
+100E AAAA0000474220Travel Expenses Acc Travel Expenses Account                           TRAVEL EXPEN
+100E AAAA0000476000Office supplies     Office furniture and supplies                     OFFICE FURNI
+100E AAAA0000800000Sales Revenue       Sales Revenue                                     SALES REVENU
+100E AAAA0000800020Erlöse - Dienstleis.Erlöse aus Dienstleistungen                       ERLÖSE AUS D
+100E AAAA0000889000Revenue reductions  Other revenue reductions - returns,...            OTHER REVENU
+100E AAAA0001000020Accts Rcvbl         Accounts Receivable                               ACCOUNTS REC
+100E AAAADDB10     try this            try this for english                              TRY THIS FOR
+100E ACIA0000113100Dte Bank (domestic) Deutsche Bank (domestic)                          DEUTSCHE BANK (DOMESTIC)
+100E ACIA0000140000Trade Receivables - Trade Receivables - domestic                      TRADE RECEIVABLES - DOMES
+100E ACIA0000154000Input tax           Input tax (See account assignment text)           INPUT TAX (SEE ACCOUNT AS
+100E ACIA0000160000AP-domestic         Trade Payables - domestic                         TRADE PAYABLES - DOMESTIC
+100E ACIA0000175000Output tax          Output tax                                        OUTPUT TAX
+100E ACIA0000230000Foreign currency revForeign currency revaluation losses               FOREIGN CURRENCY REVALUAT
+100E ACIA0000230051Gain/loss Euro conv.Gain/loss Euro conversion / document difference   GAIN/LOSS EURO CONVERSION
+100E ACIA0000230052Gain/loss Euro conv.Gain/loss Euro conversion - clearing trans. diff. GAIN/LOSS EURO CONVERSION
+100E ACIA0000230053Gain/loss Euro conv.Gain/loss Euro conversion / carry forward bal.diffGAIN/LOSS EURO CONVERSION
+100E ACIA0000230054Gain/loss Euro conv.Gain/loss Euro conversion / FI-MM reconciliation  GAIN/LOSS EURO CONVERSION
+100E ACIA0000230056Gain/loss Euro conv.Gain/loss Euro conversion / FI-AA reconciliation  GAIN/LOSS EURO CONVERSION
+100E ACIA0000230057Gain/loss Euro conv.Gain/loss Eu conv. - clearing trans.-special post GAIN/LOSS EU CONV. - CLEA
+100E ACIA0000280020Income rounding diffIncome rounding differences - foreign currency    INCOME ROUNDING DIFFERENC
+100E ACIA0000800000Sales revenues - domSales revenues - domestic - finished goods        SALES REVENUES - DOMESTIC
+100E ACIA0000820000Proceeds from disposProceeds from disposal/sale fixed assets          PROCEEDS FROM DISPOSAL/SA
+100E ACIA0000900000Unap.ret.earnings pyUnappropriated retained earnings from previous yr UNAPPROPRIATED RETAINED E
+100E ACIA0078199990*offset account     *offset account                                   *OFFSET ACCOUNT
+100E ACIA0080011000Machinery and equip.Machinery and equipment                           MACHINERY AND EQUIPMENT
+100E ACIA0080011010ADP-mach./equipment Accumulated depreciation - machinery and equipmentACCUMULATED DEPRECIATION
+100E ACIA0080089000Reserves for other lOther provisions                                  OTHER PROVISIONS
+100E ACIA0080140099AR-domestic, adjustsTrade Receivables - domestic, adjustment acct.    TRADE RECEIVABLES - DOMES
+100E ACIA0080199990Clear asset acquis. Asset acquisition clearing not integrated         ASSET ACQUISITION CLEARIN
+100E ACIA0080200000Loss-asset disposalsLoss on disposal/sale of fixed assets             LOSS ON DISPOSAL/SALE OF
+100E ACIA0080211100Ordinary depreciatioOrdinary depreciation - fixed assets              ORDINARY DEPRECIATION - F
+100E ACIA0080211200Extraordinary deprecExtraordinary depreciation - fixed assets         EXTRAORDINARY DEPRECIATIO
+100E ACIA0080230000Foreign currency revForeign currency revaluation losses               FOREIGN CURRENCY REVALUAT
+100E ACIA0080250000Profits on disposal/Profits on disposal/sale of fixed assets          PROFITS ON DISPOSAL/SALE
+100E ACIA0080253000Income from asset wrIncome from asset write-up (overdepreciation)     INCOME FROM ASSET WRITE-U
+100E ACIA0080280020Income rounding diffIncome rounding differences - foreign currency    INCOME ROUNDING DIFFERENC
+100E ACIA0080299000Other operating incoOther operating income                            OTHER OPERATING INCOME
+100E ACIA0080445000Pension payments    Pension Scheme Contributions                      PENSION SCHEME CONTRIBUTI
+100E ACIA0080825000Suspense a/c - dispoSuspense a/c - disposal/sale fixed assets         SUSPENSE A/C - DISPOSAL/S
+100E ACIA0080900000Unap.ret.earnings pyUnappropriated retained earnings from previous yr UNAPPROPRIATED RETAINED E
+100E ACIA0090011000Machinery and equip.Machinery and equipment                           MACHINERY AND EQUIPMENT
+100E ACIA0090011010ADP-mach./equipment Accumulated depreciation - machinery and equipmentACCUMULATED DEPRECIATION
+100E ACIA0090089000Reserves for other lOther provisions                                  OTHER PROVISIONS
+100E ACIA0090140099AR-domestic, adjustsTrade Receivables - domestic, adjustment acct.    TRADE RECEIVABLES - DOMES
+100E ACIA0090199990Clear asset acquis. Asset acquisition clearing not integrated         ASSET ACQUISITION CLEARIN
+100E ACIA0090200000Loss-asset disposalsLoss on disposal/sale of fixed assets             LOSS ON DISPOSAL/SALE OF
+100E ACIA0090211100Ordinary depreciatioOrdinary depreciation - fixed assets              ORDINARY DEPRECIATION - F
+100E ACIA0090211200Extraordinary deprecExtraordinary depreciation - fixed assets         EXTRAORDINARY DEPRECIATIO
+100E ACIA0090230000Foreign currency revForeign currency revaluation losses               FOREIGN CURRENCY REVALUAT
+100E ACIA0090250000Profits on disposal/Profits on disposal/sale of fixed assets          PROFITS ON DISPOSAL/SALE
+100E ACIA0090253000Income from asset wrIncome from asset write-up (overdepreciation)     INCOME FROM ASSET WRITE-U
+100E ACIA0090280020Income rounding diffIncome rounding differences - foreign currency    INCOME ROUNDING DIFFERENC
+100E ACIA0090299000Other operating incoOther operating income                            OTHER OPERATING INCOME
+100E ACIA0090445000Pension payments    Pension Scheme Contributions                      PENSION SCHEME CONTRIBUTI
+100E ACIA0090825000Suspense a/c - dispoSuspense a/c - disposal/sale fixed assets         SUSPENSE A/C - DISPOSAL/S
+100E ACIA0090900000Unap.ret.earnings pyUnappropriated retained earnings from previous yr UNAPPROPRIATED RETAINED E
+100E BANK0000230051Gain/loss Euro conv.Gain/loss Euro conversion / document difference   GAIN/LOSS EURO CONVERSION
+100E BANK0000230052Gain/loss Euro conv.Gain/loss Euro conversion - clearing trans. diff. GAIN/LOSS EURO CONVERSION
+100E BANK0000230053Gain/loss Euro conv.Gain/loss Euro conversion / carry forward bal.diffGAIN/LOSS EURO CONVERSION
+100E BANK0000230056Gain/loss Euro conv.Gain/loss Euro conversion / FI-AA reconciliation  GAIN/LOSS EURO CONVERSION
+100E BANK0000230057Gain/loss Euro conv.Gain/loss Eu conv. - clearing trans.-special post GAIN/LOSS EU CONV. - CLEA
+100E BANK0010101000Cash on hands       Cash on hands                                     CASH ON HANDS
+100E BANK0010102000Balances with c.b.  Balances with central banks                       BALANCES WITH CENTRAL BAN
+100E BANK0010102100Balances with c.b.USBalances with central banks in USD                BALANCES WITH CENTRAL BAN
+100E BANK0010102200Balances with c.b.GBBalances with central banks in GBP                BALANCES WITH CENTRAL BAN
+100E BANK0010201000Treasury Bills      Treasury Bills                                    TREASURY BILLS
+100E BANK0010202000Bills of exchange   Bills of exchange                                 BILLS OF EXCHANGE
+100E BANK0010302100Loans Domestic      Loans Domestic                                    LOANS DOMESTIC
+100E BANK0010302200Loans Foreign       Loans Foreign                                     LOANS FOREIGN
+100E BANK0010303100Lease fin. rec. dom.Lease financing receivables domestic              LEASE FINANCING RECEIVABL
+100E BANK0010303200Lease fin. rec. for.Lease financing receivables foreign               LEASE FINANCING RECEIVABL
+100E BANK0010502100Loans cons. foreign Loans and advances to consumers foreign           LOANS AND ADVANCES TO CON

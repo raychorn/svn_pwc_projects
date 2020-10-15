@@ -1,0 +1,1776 @@
+* PwCXTRACT version:PwCXTRACT Version 4.0
+* Property of PricewaterhouseCoopers WPG AG
+Data extraction run with ID: 9D58ADEA14
+The ID is based on system ID, client, date and time.
+System ID: E6D
+Client: 100
+Date: 2017/03/03
+Time: 14:31
+
+-----------------------------------------------------------------------------------------------------------------------------------
+This logfile includes the following content:
+1. Content of input file
+2. Estimated extracted data volume.
+3. Processed fields
+4. Processed tables
+5. Table of WHERE statements
+6. Generated extraction report
+7. Attributes of triggered extraction job
+8. Overview of input parameters
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Input:
+BKPF                MANDT
+BKPF                BUKRS                = '0001'
+BKPF                BELNR
+BKPF                GJAHR                IN ('2013')
+BKPF                BLART
+BKPF                BLDAT
+BKPF                BUDAT
+BKPF                MONAT
+BKPF                CPUDT
+BKPF                CPUTM
+BKPF                USNAM
+BKPF                TCODE
+BKPF                BVORG
+BKPF                XBLNR
+BKPF                DBBLG
+BKPF                STBLG
+BKPF                STJAH
+BKPF                BKTXT
+BKPF                WAERS
+BKPF                KURSF
+BKPF                KZWRS
+BKPF                BSTAT
+BKPF                XRUEB
+BKPF                GLVOR
+BKPF                GRPID
+BKPF                AWTYP
+BKPF                AWKEY
+BKPF                HWAER
+BKPF                XSTOV
+BKPF                STODT
+BKPF                XMWST
+BKPF                AWSYS
+BKPF                STGRD
+BKPF                XREVERSAL
+BKPF                PPNAM
+BKPF                BRNCH
+BSEG                MANDT
+BSEG                BUKRS                = BKPF-BUKRS
+BSEG                BELNR                = BKPF-BELNR
+BSEG                GJAHR                = BKPF-GJAHR
+BSEG                BUZEI
+BSEG                AUGDT
+BSEG                AUGCP
+BSEG                AUGBL
+BSEG                AUGGJ
+BSEG                BSCHL
+BSEG                KOART
+BSEG                UMSKZ
+BSEG                ZUMSK
+BSEG                SHKZG
+BSEG                GSBER
+BSEG                MWSKZ
+BSEG                DMBTR
+BSEG                WRBTR
+BSEG                KTOSL
+BSEG                MWART
+BSEG                ZUONR
+BSEG                SGTXT
+BSEG                VBUND
+BSEG                BEWAR
+BSEG                VORGN
+BSEG                KOKRS
+BSEG                KOSTL
+BSEG                AUFNR
+BSEG                VBELN
+BSEG                VBEL2
+BSEG                PRCTR
+BSEG                ANLN1
+BSEG                XUMSW
+BSEG                XOPVW
+BSEG                XCPDD
+BSEG                XAUTO
+BSEG                XZAHL
+BSEG                SAKNR
+BSEG                HKONT
+BSEG                KUNNR
+BSEG                LIFNR
+BSEG                XBILK
+BSEG                GVTYP
+BSEG                ZFBDT
+BSEG                ZTERM
+BSEG                SKFBT
+BSEG                SKNTO
+BSEG                ZLSCH
+BSEG                ZLSPR
+BSEG                WERKS
+BSEG                PRCTR
+BSEG                XHKOM
+BSEG                PROJK
+BSEG                XREF1
+BSEG                XREF2
+BSEG                XREF3
+BSEG                XPYPR
+BSEG                AGZEI
+BSEG                BVTYP
+BSEG                EBELN
+BSEG                EBELP
+BSEG                EMPFB
+BSEG                NEBTR
+SKAT                MANDT
+SKAT                SPRAS                = 'EN'
+SKAT                KTOPL
+SKAT                SAKNR
+SKAT                TXT20
+SKAT                TXT50
+SKAT                MCOD1
+SKA1                MANDT
+SKA1                KTOPL
+SKA1                SAKNR
+SKA1                XBILK                = 'X'
+SKA1                SAKAN
+SKA1                BILKT
+SKA1                ERDAT
+SKA1                ERNAM
+SKA1                GVTYP
+SKA1                KTOKS
+SKA1                MUSTR
+SKA1                VBUND
+SKA1                XLOEV
+SKA1                XSPEA
+SKA1                XSPEB
+SKA1                XSPEP
+SKA1                MCOD1
+SKA1                FUNC_AREA
+ANLA                MANDT
+ANLA                BUKRS                = '1000'
+ANLA                ANLN1
+ANLA                ANLN2
+ANLA                ANLKL
+ANLA                GEGST
+ANLA                ANLAR
+ANLA                ERNAM
+ANLA                ERDAT
+ANLA                AENAM
+ANLA                AEDAT
+ANLA                XLOEV
+ANLA                XSPEB
+ANLA                FELEI
+ANLA                KTOGR
+ANLA                XOPVW
+ANLA                ANLTP
+ANLA                ZUJHR
+ANLA                ZUPER
+ANLA                AKTIV
+ANLA                ABGDT
+ANLA                DEAKT
+ANLA                GPLAB
+ANLA                BSTDT
+ANLA                ORD41
+SCHEMA              SAP_Test_Schema
+TNAME1              BKPF
+TNAME2              BSEG
+ALIAS1              BKPF
+ALIAS2              BSEG
+STRIPEKEY           TestSetId
+REQUESTID           38033dbc-e750-45d9-9
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Estimated data volume of extraction:
+Table               Lines               Bytes per line      Maximum filesize              Expected filesize
+BKPF                99                  548                 52,98 KB                      26,49 KB
+BSEG                198                 876                 169,38 KB                     84,69 KB
+SKAT                27.328              226                 5,89 MB                       2,95 MB
+SKA1                8.769               250                 2,09 MB                       1,05 MB
+ANLA                606                 302                 178,72 KB                     89,36 KB
+
+Total maximum filesize: 8,37 MB
+Total estimated filesize: 4,19 MB
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Processed fields:
+BKPF                          MANDT                         000006000003C000000Client
+BKPF                          BUKRS                         000008000004C000000Company Code
+BKPF                          BELNR                         000020000010C000000Accounting Document Number
+BKPF                          GJAHR                         000008000004N000000Fiscal Year
+BKPF                          BLART                         000004000002C000000Document Type
+BKPF                          BLDAT                         000016000010D000000Document Date in Document
+BKPF                          BUDAT                         000016000010D000000Posting Date in the Document
+BKPF                          MONAT                         000004000002N000000Fiscal Period
+BKPF                          CPUDT                         000016000010D000000Day On Which Accounting Document Was Entered
+BKPF                          CPUTM                         000012000008T000000Time of Entry
+BKPF                          USNAM                         000024000012C000000User name
+BKPF                          TCODE                         000040000020C000000Transaction Code
+BKPF                          BVORG                         000032000016C000000Number of Cross-Company Code Posting Transaction
+BKPF                          XBLNR                         000032000016C000000Reference Document Number
+BKPF                          DBBLG                         000020000010C000000Recurring Entry Document Number
+BKPF                          STBLG                         000020000010C000000Reverse Document Number
+BKPF                          STJAH                         000008000004N000000Reverse document fiscal year
+BKPF                          BKTXT                         000050000025C000000Document Header Text
+BKPF                          WAERS                         000010000005C000000Currency Key
+BKPF                          KURSF                         000005000012P000005Exchange rate
+BKPF                          KZWRS                         000010000005C000000Currency Key for the Group Currency
+BKPF                          BSTAT                         000002000001C000000Document Status
+BKPF                          XRUEB                         000002000001C000000Indicator: Document is posted to a previous period
+BKPF                          GLVOR                         000008000004C000000Business Transaction
+BKPF                          GRPID                         000024000012C000000Batch Input Session Name
+BKPF                          AWTYP                         000010000005C000000Reference Transaction
+BKPF                          AWKEY                         000040000020C000000Reference Key
+BKPF                          HWAER                         000010000005C000000Local Currency
+BKPF                          XSTOV                         000002000001C000000Indicator: Document is flagged for reversal
+BKPF                          STODT                         000016000010D000000Planned Date for the Reverse Posting
+BKPF                          XMWST                         000002000001C000000Calculate tax automatically
+BKPF                          AWSYS                         000020000010C000000Logical System
+BKPF                          STGRD                         000004000002C000000Reason for Reversal
+BKPF                          XREVERSAL                     000002000001C000000Specifies whether doc. is reversal doc. or reversed
+BKPF                          PPNAM                         000024000012C000000Name of User Who Parked this Document
+BKPF                          BRNCH                         000008000004C000000Branch Number
+BSEG                          MANDT                         000006000003C000000Client
+BSEG                          BUKRS                         000008000004C000000Company Code
+BSEG                          BELNR                         000020000010C000000Accounting Document Number
+BSEG                          GJAHR                         000008000004N000000Fiscal Year
+BSEG                          BUZEI                         000006000003N000000Number of Line Item Within Accounting Document
+BSEG                          AUGDT                         000016000010D000000Clearing Date
+BSEG                          AUGCP                         000016000010D000000Clearing Entry Date
+BSEG                          AUGBL                         000020000010C000000Document Number of the Clearing Document
+BSEG                          AUGGJ                         000008000004N000000Fiscal Year of Clearing Document
+BSEG                          BSCHL                         000004000002C000000Posting Key
+BSEG                          KOART                         000002000001C000000Account Type
+BSEG                          UMSKZ                         000002000001C000000Special G/L Indicator
+BSEG                          ZUMSK                         000002000001C000000Target Special G/L Indicator
+BSEG                          SHKZG                         000002000001C000000Debit/Credit Indicator
+BSEG                          GSBER                         000008000004C000000Business Area
+BSEG                          MWSKZ                         000004000002C000000Tax on sales/purchases code
+BSEG                          DMBTR                         000007000016P000002Amount in Local Currency
+BSEG                          WRBTR                         000007000016P000002Amount in document currency
+BSEG                          KTOSL                         000006000003C000000Transaction Key
+BSEG                          MWART                         000002000001C000000Tax Type
+BSEG                          ZUONR                         000036000018C000000Assignment Number
+BSEG                          SGTXT                         000100000050C000000Item Text
+BSEG                          VBUND                         000012000006C000000Company ID of trading partner
+BSEG                          BEWAR                         000006000003C000000Transaction Type
+BSEG                          VORGN                         000008000004C000000Transaction Type for General Ledger
+BSEG                          KOKRS                         000008000004C000000Controlling Area
+BSEG                          KOSTL                         000020000010C000000Cost Center
+BSEG                          AUFNR                         000024000012C000000Order Number
+BSEG                          VBELN                         000020000010C000000Billing Document
+BSEG                          VBEL2                         000020000010C000000Sales Document
+BSEG                          PRCTR                         000020000010C000000Profit Center
+BSEG                          ANLN1                         000024000012C000000Main Asset Number
+BSEG                          XUMSW                         000002000001C000000Indicator: Sales-related item ?
+BSEG                          XOPVW                         000002000001C000000Indicator: Open item management?
+BSEG                          XCPDD                         000002000001C000000Indicator: Address and bank data set individually
+BSEG                          XAUTO                         000002000001C000000Indicator: Line item automatically created
+BSEG                          XZAHL                         000002000001C000000Indicator: Is the posting key used in a payment tran
+BSEG                          SAKNR                         000020000010C000000G/L Account Number
+BSEG                          HKONT                         000020000010C000000General Ledger Account
+BSEG                          KUNNR                         000020000010C000000Customer Number
+BSEG                          LIFNR                         000020000010C000000Account Number of Vendor or Creditor
+BSEG                          XBILK                         000002000001C000000Indicator: Account is a balance sheet account?
+BSEG                          GVTYP                         000004000002C000000P&L statement account type
+BSEG                          ZFBDT                         000016000010D000000Baseline Date for Due Date Calculation
+BSEG                          ZTERM                         000008000004C000000Terms of Payment Key
+BSEG                          SKFBT                         000007000016P000002Amount Eligible for Cash Discount in Document Curren
+BSEG                          SKNTO                         000007000016P000002Cash discount amount in local currency
+BSEG                          ZLSCH                         000002000001C000000Payment Method
+BSEG                          ZLSPR                         000002000001C000000Payment Block Key
+BSEG                          WERKS                         000008000004C000000Plant
+BSEG                          XHKOM                         000002000001C000000Indicator: G/L account assigned manually ?
+BSEG                          PROJK                         000016000024N000000Work Breakdown Structure Element (WBS Element)
+BSEG                          XREF1                         000024000012C000000Business partner reference key
+BSEG                          XREF2                         000024000012C000000Business partner reference key
+BSEG                          XREF3                         000040000020C000000Reference key for line item
+BSEG                          XPYPR                         000002000001C000000Indicator: Items from Payment Program Blocked
+BSEG                          AGZEI                         000003000006P000000Clearing Item
+BSEG                          BVTYP                         000008000004C000000Partner Bank Type
+BSEG                          EBELN                         000020000010C000000Purchasing Document Number
+BSEG                          EBELP                         000010000005N000000Item Number of Purchasing Document
+BSEG                          EMPFB                         000020000010C000000Payee/Payer
+BSEG                          NEBTR                         000007000016P000002Net Payment Amount
+SKAT                          MANDT                         000006000003C000000Client
+SKAT                          SPRAS                         000002000002C000000Language Key
+SKAT                          KTOPL                         000008000004C000000Chart of Accounts
+SKAT                          SAKNR                         000020000010C000000G/L Account Number
+SKAT                          TXT20                         000040000020C000000G/L account short text
+SKAT                          TXT50                         000100000050C000000G/L Account Long Text
+SKAT                          MCOD1                         000050000025C000000Search Term for Matchcode Search
+SKA1                          MANDT                         000006000003C000000Client
+SKA1                          KTOPL                         000008000004C000000Chart of Accounts
+SKA1                          SAKNR                         000020000010C000000G/L Account Number
+SKA1                          XBILK                         000002000001C000000Indicator: Account is a balance sheet account?
+SKA1                          SAKAN                         000020000010C000000G/L account number, significant length
+SKA1                          BILKT                         000020000010C000000Group Account Number
+SKA1                          ERDAT                         000016000010D000000Date on which the Record Was Created
+SKA1                          ERNAM                         000024000012C000000Name of Person who Created the Object
+SKA1                          GVTYP                         000004000002C000000P&L statement account type
+SKA1                          KTOKS                         000008000004C000000G/L Account Group
+SKA1                          MUSTR                         000020000010C000000Number of the sample account
+SKA1                          VBUND                         000012000006C000000Company ID of trading partner
+SKA1                          XLOEV                         000002000001C000000Indicator: Account marked for deletion?
+SKA1                          XSPEA                         000002000001C000000Indicator: account is blocked for creation ?
+SKA1                          XSPEB                         000002000001C000000Indicator: Is Account Blocked for Posting?
+SKA1                          XSPEP                         000002000001C000000Indicator: account blocked for planning ?
+SKA1                          MCOD1                         000050000025C000000Search Term for Using Matchcode
+SKA1                          FUNC_AREA                     000032000016C000000Functional Area
+ANLA                          MANDT                         000006000003C000000Client
+ANLA                          BUKRS                         000008000004C000000Company Code
+ANLA                          ANLN1                         000024000012C000000Main Asset Number
+ANLA                          ANLN2                         000008000004C000000Asset Subnumber
+ANLA                          ANLKL                         000016000008C000000Asset Class
+ANLA                          GEGST                         000016000008C000000Technical asset number
+ANLA                          ANLAR                         000010000005C000000Asset types
+ANLA                          ERNAM                         000024000012C000000Name of Person who Created the Object
+ANLA                          ERDAT                         000016000010D000000Date on Which Record Was Created
+ANLA                          AENAM                         000024000012C000000Name of Person Who Changed Object
+ANLA                          AEDAT                         000016000010D000000Changed on
+ANLA                          XLOEV                         000002000001C000000Indicator: Account marked for deletion?
+ANLA                          XSPEB                         000002000001C000000Indicator: Asset Locked to Acquisition Postings
+ANLA                          FELEI                         000008000004C000000Screen layout for Asset Accounting
+ANLA                          KTOGR                         000016000008C000000Account determination
+ANLA                          XOPVW                         000002000001C000000Asset under construct. with line item settlement
+ANLA                          ANLTP                         000002000001N000000Asset Category
+ANLA                          ZUJHR                         000008000004N000000Fiscal year in which first acquisition was posted
+ANLA                          ZUPER                         000006000003N000000Period in which first acquisition was posted
+ANLA                          AKTIV                         000016000010D000000Asset capitalization date
+ANLA                          ABGDT                         000016000010D000000Asset value date for the last retirement
+ANLA                          DEAKT                         000016000010D000000Deactivation date
+ANLA                          GPLAB                         000016000010D000000Planned retirement date
+ANLA                          BSTDT                         000016000010D000000Asset purchase order date
+ANLA                          ORD41                         000008000004C000000Evaluation group 1
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Processed tables:
+BKPF     1     BSEG
+BSEG
+SKAT
+SKA1
+ANLA
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Where table:
+BKPF                          BUKRS  = '0001'
+BKPF                          GJAHR  IN ('2013')
+BSEG                          BUKRS  = BKPF-BUKRS
+BSEG                          BELNR  = BKPF-BELNR
+BSEG                          GJAHR  = BKPF-GJAHR
+SKAT                          SPRAS  = 'EN'
+SKA1                          XBILK  = 'X'
+ANLA                          BUKRS  = '1000'
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Generated Report:
+*&----------------------------*
+*& auto generated *
+*&----------------------------*
+REPORT ZPWCXTRACT_GEN_9D58ADEA14 .
+
+DATA fragment(300) TYPE c.
+DATA line(5000) TYPE c.
+DATA separator TYPE c.
+DATA filename TYPE string.
+DATA strtemp(300) TYPE c.
+DATA tempstring(256) TYPE c.
+DATA logline(200) TYPE c.
+DATA loglines TYPE logline OCCURS 0 WITH HEADER LINE.
+DATA mybcglog(256) TYPE c.
+
+DATA CR_LF(2) TYPE c.
+DATA CR(1) TYPE c.
+DATA LF(1) TYPE c.
+CR_LF = CL_ABAP_CHAR_UTILITIES=>CR_LF.
+CR = CR_LF+0(1).
+LF = CL_ABAP_CHAR_UTILITIES=>NEWLINE.
+
+separator = ';'.
+
+mybcglog = '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_bcglog.txt'.
+OPEN DATASET mybcglog FOR OUTPUT IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+
+PERFORM schreibeprotokoll USING '* PwCXTRACT version:PwCXTRACT Version 4.0'.
+PERFORM schreibeprotokoll USING '* Property of PricewaterhouseCoopers WPG AG'.
+PERFORM schreibeprotokoll USING 'Background job for ID: 9D58ADEA14'.
+PERFORM schreibeprotokoll USING 'The ID is based on system ID, client, date and time.'.
+PERFORM schreibeprotokoll USING ''.
+PERFORM schreibeprotokoll USING sy-uline.
+PERFORM schreibeprotokoll USING 'This logfile contains:'.
+PERFORM schreibeprotokoll USING '1. List of all handled files along with status updates'.
+PERFORM schreibeprotokoll USING '2. Log of errors which occured during execution'.
+PERFORM schreibeprotokoll USING ''.
+PERFORM schreibeprotokoll USING sy-uline.
+PERFORM schreibeprotokoll USING 'Open log'.
+TABLES BKPF .
+TABLES BSEG .
+TABLES SKAT .
+TABLES SKA1 .
+TABLES ANLA .
+
+
+DATA count_BKPF TYPE i.
+count_BKPF = 0.
+DATA chunkcounter_BKPF TYPE i.
+chunkcounter_BKPF = 1.
+DATA file_BKPF TYPE string.
+file_BKPF = '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BKPF_1.fil'.
+OPEN DATASET file_BKPF FOR OUTPUT IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+line = ''.
+PERFORM schreibeprotokoll USING 'Open file/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BKPF_1.fil'.
+
+DATA count_BSEG TYPE i.
+count_BSEG = 0.
+DATA chunkcounter_BSEG TYPE i.
+chunkcounter_BSEG = 1.
+DATA file_BSEG TYPE string.
+file_BSEG = '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BSEG_1.fil'.
+OPEN DATASET file_BSEG FOR OUTPUT IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+line = ''.
+PERFORM schreibeprotokoll USING 'Open file/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BSEG_1.fil'.
+
+DATA count_SKAT TYPE i.
+count_SKAT = 0.
+DATA chunkcounter_SKAT TYPE i.
+chunkcounter_SKAT = 1.
+DATA file_SKAT TYPE string.
+file_SKAT = '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKAT_1.fil'.
+OPEN DATASET file_SKAT FOR OUTPUT IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+line = ''.
+PERFORM schreibeprotokoll USING 'Open file/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKAT_1.fil'.
+
+DATA count_SKA1 TYPE i.
+count_SKA1 = 0.
+DATA chunkcounter_SKA1 TYPE i.
+chunkcounter_SKA1 = 1.
+DATA file_SKA1 TYPE string.
+file_SKA1 = '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKA1_1.fil'.
+OPEN DATASET file_SKA1 FOR OUTPUT IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+line = ''.
+PERFORM schreibeprotokoll USING 'Open file/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKA1_1.fil'.
+
+DATA count_ANLA TYPE i.
+count_ANLA = 0.
+DATA chunkcounter_ANLA TYPE i.
+chunkcounter_ANLA = 1.
+DATA file_ANLA TYPE string.
+file_ANLA = '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_ANLA_1.fil'.
+OPEN DATASET file_ANLA FOR OUTPUT IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+line = ''.
+PERFORM schreibeprotokoll USING 'Open file/usr/sap/trans/tmp/ZTMP/9D58ADEA14_ANLA_1.fil'.
+
+
+SELECT * FROM
+BKPF
+WHERE
+BUKRS  = '0001'
+AND GJAHR  IN ('2013')
+.
+
+CLEAR line.
+
+CLEAR fragment.
+MOVE BKPF-MANDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000000(000003) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BUKRS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000003(000004) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BELNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000007(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-GJAHR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000017(000004) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BLART TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000021(000002) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BLDAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000023(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BUDAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000033(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-MONAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000043(000002) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-CPUDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000045(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-CPUTM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000055(000008) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-USNAM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000063(000012) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-TCODE TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000075(000020) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BVORG TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000095(000016) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-XBLNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000111(000016) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-DBBLG TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000127(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-STBLG TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000137(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-STJAH TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000147(000004) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BKTXT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000151(000025) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-WAERS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000176(000005) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-KURSF TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000181(000012) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-KZWRS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000193(000005) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BSTAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000198(000001) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-XRUEB TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000199(000001) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-GLVOR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000200(000004) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-GRPID TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000204(000012) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-AWTYP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000216(000005) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-AWKEY TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000221(000020) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-HWAER TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000241(000005) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-XSTOV TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000246(000001) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-STODT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000247(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-XMWST TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000257(000001) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-AWSYS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000258(000010) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-STGRD TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000268(000002) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-XREVERSAL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000270(000001) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-PPNAM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000271(000012) = fragment.
+
+CLEAR fragment.
+MOVE BKPF-BRNCH TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000283(000004) = fragment.
+
+TRANSFER line TO file_BKPF .
+count_BKPF = count_BKPF + 1.
+
+IF count_BKPF >= 100 .
+CLOSE DATASET file_BKPF .
+CONCATENATE 'Closing file' file_BKPF
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_BKPF TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+chunkcounter_BKPF = chunkcounter_BKPF  + 1.
+file_BKPF =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BKPF_'.
+WRITE chunkcounter_BKPF TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_BKPF strtemp '.fil ' INTO file_BKPF .
+CONCATENATE 'opening file' file_BKPF
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+OPEN DATASET file_BKPF FOR OUTPUT
+IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+count_BKPF = 0.
+ENDIF.
+
+
+
+
+
+SELECT * FROM
+BSEG
+WHERE
+BUKRS  = BKPF-BUKRS
+AND BELNR  = BKPF-BELNR
+AND GJAHR  = BKPF-GJAHR
+.
+
+CLEAR line.
+
+CLEAR fragment.
+MOVE BSEG-MANDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000000(000003) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-BUKRS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000003(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-BELNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000007(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-GJAHR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000017(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-BUZEI TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000021(000003) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-AUGDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000024(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-AUGCP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000034(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-AUGBL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000044(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-AUGGJ TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000054(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-BSCHL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000058(000002) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-KOART TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000060(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-UMSKZ TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000061(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ZUMSK TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000062(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-SHKZG TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000063(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-GSBER TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000064(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-MWSKZ TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000068(000002) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-DMBTR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000070(000016) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-WRBTR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000086(000016) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-KTOSL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000102(000003) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-MWART TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000105(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ZUONR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000106(000018) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-SGTXT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000124(000050) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-VBUND TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000174(000006) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-BEWAR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000180(000003) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-VORGN TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000183(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-KOKRS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000187(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-KOSTL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000191(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-AUFNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000201(000012) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-VBELN TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000213(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-VBEL2 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000223(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-PRCTR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000233(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ANLN1 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000243(000012) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XUMSW TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000255(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XOPVW TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000256(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XCPDD TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000257(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XAUTO TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000258(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XZAHL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000259(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-SAKNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000260(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-HKONT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000270(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-KUNNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000280(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-LIFNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000290(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XBILK TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000300(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-GVTYP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000301(000002) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ZFBDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000303(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ZTERM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000313(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-SKFBT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000317(000016) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-SKNTO TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000333(000016) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ZLSCH TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000349(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-ZLSPR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000350(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-WERKS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000351(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XHKOM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000355(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-PROJK TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000356(000024) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XREF1 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000380(000012) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XREF2 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000392(000012) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XREF3 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000404(000020) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-XPYPR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000424(000001) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-AGZEI TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000425(000006) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-BVTYP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000431(000004) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-EBELN TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000435(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-EBELP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000445(000005) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-EMPFB TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000450(000010) = fragment.
+
+CLEAR fragment.
+MOVE BSEG-NEBTR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000460(000016) = fragment.
+
+TRANSFER line TO file_BSEG .
+count_BSEG = count_BSEG + 1.
+
+IF count_BSEG >= 100 .
+CLOSE DATASET file_BSEG .
+CONCATENATE 'Closing file' file_BSEG
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_BSEG TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+chunkcounter_BSEG = chunkcounter_BSEG  + 1.
+file_BSEG =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BSEG_'.
+WRITE chunkcounter_BSEG TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_BSEG strtemp '.fil ' INTO file_BSEG .
+CONCATENATE 'opening file' file_BSEG
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+OPEN DATASET file_BSEG FOR OUTPUT
+IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+count_BSEG = 0.
+ENDIF.
+
+ENDSELECT.
+ENDSELECT.
+
+
+
+
+SELECT * FROM
+SKAT
+WHERE
+SPRAS  = 'EN'
+.
+
+CLEAR line.
+
+CLEAR fragment.
+MOVE SKAT-MANDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000000(000003) = fragment.
+
+CLEAR fragment.
+MOVE SKAT-SPRAS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000003(000002) = fragment.
+
+CLEAR fragment.
+MOVE SKAT-KTOPL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000005(000004) = fragment.
+
+CLEAR fragment.
+MOVE SKAT-SAKNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000009(000010) = fragment.
+
+CLEAR fragment.
+MOVE SKAT-TXT20 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000019(000020) = fragment.
+
+CLEAR fragment.
+MOVE SKAT-TXT50 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000039(000050) = fragment.
+
+CLEAR fragment.
+MOVE SKAT-MCOD1 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000089(000025) = fragment.
+
+TRANSFER line TO file_SKAT .
+count_SKAT = count_SKAT + 1.
+
+IF count_SKAT >= 100 .
+CLOSE DATASET file_SKAT .
+CONCATENATE 'Closing file' file_SKAT
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_SKAT TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+chunkcounter_SKAT = chunkcounter_SKAT  + 1.
+file_SKAT =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKAT_'.
+WRITE chunkcounter_SKAT TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_SKAT strtemp '.fil ' INTO file_SKAT .
+CONCATENATE 'opening file' file_SKAT
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+OPEN DATASET file_SKAT FOR OUTPUT
+IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+count_SKAT = 0.
+ENDIF.
+
+ENDSELECT.
+
+
+
+
+SELECT * FROM
+SKA1
+WHERE
+XBILK  = 'X'
+.
+
+CLEAR line.
+
+CLEAR fragment.
+MOVE SKA1-MANDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000000(000003) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-KTOPL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000003(000004) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-SAKNR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000007(000010) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-XBILK TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000017(000001) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-SAKAN TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000018(000010) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-BILKT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000028(000010) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-ERDAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000038(000010) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-ERNAM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000048(000012) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-GVTYP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000060(000002) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-KTOKS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000062(000004) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-MUSTR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000066(000010) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-VBUND TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000076(000006) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-XLOEV TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000082(000001) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-XSPEA TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000083(000001) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-XSPEB TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000084(000001) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-XSPEP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000085(000001) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-MCOD1 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000086(000025) = fragment.
+
+CLEAR fragment.
+MOVE SKA1-FUNC_AREA TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000111(000016) = fragment.
+
+TRANSFER line TO file_SKA1 .
+count_SKA1 = count_SKA1 + 1.
+
+IF count_SKA1 >= 100 .
+CLOSE DATASET file_SKA1 .
+CONCATENATE 'Closing file' file_SKA1
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_SKA1 TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+chunkcounter_SKA1 = chunkcounter_SKA1  + 1.
+file_SKA1 =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKA1_'.
+WRITE chunkcounter_SKA1 TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_SKA1 strtemp '.fil ' INTO file_SKA1 .
+CONCATENATE 'opening file' file_SKA1
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+OPEN DATASET file_SKA1 FOR OUTPUT
+IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+count_SKA1 = 0.
+ENDIF.
+
+ENDSELECT.
+
+
+
+
+SELECT * FROM
+ANLA
+WHERE
+BUKRS  = '1000'
+.
+
+CLEAR line.
+
+CLEAR fragment.
+MOVE ANLA-MANDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000000(000003) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-BUKRS TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000003(000004) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ANLN1 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000007(000012) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ANLN2 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000019(000004) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ANLKL TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000023(000008) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-GEGST TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000031(000008) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ANLAR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000039(000005) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ERNAM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000044(000012) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ERDAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000056(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-AENAM TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000066(000012) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-AEDAT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000078(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-XLOEV TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000088(000001) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-XSPEB TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000089(000001) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-FELEI TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000090(000004) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-KTOGR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000094(000008) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-XOPVW TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000102(000001) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ANLTP TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000103(000001) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ZUJHR TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000104(000004) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ZUPER TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000108(000003) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-AKTIV TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000111(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ABGDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000121(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-DEAKT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000131(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-GPLAB TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000141(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-BSTDT TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000151(000010) = fragment.
+
+CLEAR fragment.
+MOVE ANLA-ORD41 TO fragment.
+SHIFT fragment LEFT DELETING LEADING space.
+PERFORM subDeleteSpecialChars USING fragment CHANGING fragment.
+line+000161(000004) = fragment.
+
+TRANSFER line TO file_ANLA .
+count_ANLA = count_ANLA + 1.
+
+IF count_ANLA >= 100 .
+CLOSE DATASET file_ANLA .
+CONCATENATE 'Closing file' file_ANLA
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_ANLA TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+chunkcounter_ANLA = chunkcounter_ANLA  + 1.
+file_ANLA =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_ANLA_'.
+WRITE chunkcounter_ANLA TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_ANLA strtemp '.fil ' INTO file_ANLA .
+CONCATENATE 'opening file' file_ANLA
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+OPEN DATASET file_ANLA FOR OUTPUT
+IN TEXT MODE ENCODING UTF-8 WITH BYTE-ORDER MARK.
+count_ANLA = 0.
+ENDIF.
+
+ENDSELECT.
+
+
+
+
+
+DATA errline(400) TYPE c.
+TYPES ty_errline(400) TYPE c.
+DATA it_err TYPE STANDARD TABLE OF ty_errline.
+
+
+file_BKPF =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BKPF_'.
+WRITE chunkcounter_BKPF TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_BKPF strtemp '.fil ' INTO file_BKPF .
+CONCATENATE 'Closing file' file_BKPF
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_BKPF TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+IF count_BKPF = '0' AND chunkcounter_BKPF = '1'.
+APPEND 'No lines extracted for TableBKPF' TO it_err.
+ENDIF.
+CLOSE DATASET file_BKPF .
+
+
+file_BSEG =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BSEG_'.
+WRITE chunkcounter_BSEG TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_BSEG strtemp '.fil ' INTO file_BSEG .
+CONCATENATE 'Closing file' file_BSEG
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_BSEG TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+IF count_BSEG = '0' AND chunkcounter_BSEG = '1'.
+APPEND 'No lines extracted for TableBSEG' TO it_err.
+ENDIF.
+CLOSE DATASET file_BSEG .
+
+
+file_SKAT =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKAT_'.
+WRITE chunkcounter_SKAT TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_SKAT strtemp '.fil ' INTO file_SKAT .
+CONCATENATE 'Closing file' file_SKAT
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_SKAT TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+IF count_SKAT = '0' AND chunkcounter_SKAT = '1'.
+APPEND 'No lines extracted for TableSKAT' TO it_err.
+ENDIF.
+CLOSE DATASET file_SKAT .
+
+
+file_SKA1 =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKA1_'.
+WRITE chunkcounter_SKA1 TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_SKA1 strtemp '.fil ' INTO file_SKA1 .
+CONCATENATE 'Closing file' file_SKA1
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_SKA1 TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+IF count_SKA1 = '0' AND chunkcounter_SKA1 = '1'.
+APPEND 'No lines extracted for TableSKA1' TO it_err.
+ENDIF.
+CLOSE DATASET file_SKA1 .
+
+
+file_ANLA =
+ '/usr/sap/trans/tmp/ZTMP/9D58ADEA14_ANLA_'.
+WRITE chunkcounter_ANLA TO strtemp LEFT-JUSTIFIED.
+CONCATENATE file_ANLA strtemp '.fil ' INTO file_ANLA .
+CONCATENATE 'Closing file' file_ANLA
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+WRITE count_ANLA TO strtemp LEFT-JUSTIFIED.
+CONCATENATE '-->' strtemp 'Zeilen'
+INTO tempstring SEPARATED BY space.
+PERFORM schreibeprotokoll USING tempstring.
+IF count_ANLA = '0' AND chunkcounter_ANLA = '1'.
+APPEND 'No lines extracted for TableANLA' TO it_err.
+ENDIF.
+CLOSE DATASET file_ANLA .
+
+
+PERFORM schreibeprotokoll USING ''.
+PERFORM schreibeprotokoll USING sy-uline.
+PERFORM schreibeprotokoll USING 'Error Log:'.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:SCHEMA'.
+PERFORM schreibeprotokoll USING
+'Field:SAP_Test_Schema'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:TNAME1'.
+PERFORM schreibeprotokoll USING
+'Field:BKPF'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:TNAME2'.
+PERFORM schreibeprotokoll USING
+'Field:BSEG'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:ALIAS1'.
+PERFORM schreibeprotokoll USING
+'Field:BKPF'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:ALIAS2'.
+PERFORM schreibeprotokoll USING
+'Field:BSEG'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:STRIPEKEY'.
+PERFORM schreibeprotokoll USING
+'Field:TestSetId'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+'Error reading metadata for:'.
+PERFORM schreibeprotokoll USING
+'Table:REQUESTID'.
+PERFORM schreibeprotokoll USING
+'Field:38033dbc-e750-45d9-9af5-f48b0c'.
+PERFORM schreibeprotokoll USING
+''.
+PERFORM schreibeprotokoll USING
+''.
+LOOP AT it_err INTO errline.
+PERFORM schreibeprotokoll USING errline.
+ENDLOOP.
+CLOSE DATASET mybcglog.
+
+DELETE REPORT'ZPWCXTRACT_GEN_9D58ADEA14'.
+IF sy-subrc <> 0.
+WRITE 'Report ZPWCXTRACT_GEN_9D58ADEA14 could not be deleted.'.
+ENDIF.
+
+FORM schreibeprotokoll
+USING
+meldung TYPE c.
+TRANSFER meldung TO mybcglog.
+ENDFORM.
+
+
+FORM subDeleteSpecialChars USING VALUE(uf_text) TYPE c
+CHANGING VALUE(cf_text) TYPE c.
+REPLACE ALL OCCURRENCES OF CR_LF IN uf_text WITH ''.
+REPLACE ALL OCCURRENCES OF CR IN uf_text WITH ''.
+REPLACE ALL OCCURRENCES OF LF IN uf_text WITH ''.
+cf_text = uf_text.
+ENDFORM.
+
+
+End of program
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Triggered extraction job.
+Job-Name:
+PWCXTRACT_9D58ADEA14
+
+Job-Number:
+14315700
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Created meta data:
+/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BKPF_header.txt
+Created meta data:
+/usr/sap/trans/tmp/ZTMP/9D58ADEA14_BSEG_header.txt
+Created meta data:
+/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKAT_header.txt
+Created meta data:
+/usr/sap/trans/tmp/ZTMP/9D58ADEA14_SKA1_header.txt
+Created meta data:
+/usr/sap/trans/tmp/ZTMP/9D58ADEA14_ANLA_header.txt
+Created ACL-File:
+/usr/sap/trans/tmp/ZTMP/9D58ADEA14.acl
+
+-----------------------------------------------------------------------------------------------------------------------------------
+SAP-User:
+SSHAIKH030
+Input-File with extraction:
+C:\Users\sshaikh030\Desktop\Team\Gate5\PwC Exract ABAP code SE38\Input Parameter Files\Sadia_tested\5_tables.csv
+Limit result (Yes or No, X or blank):
+
+Limit number of rows:
+0
+Separator:
+;
+Limit number of documents per file (X or blank):
+X
+Number of documents per file:
+100
+Export result in ACL (Yes or No, X or blank):
+X
+Destination directory:
+/usr/sap/trans/tmp/ZTMP/
+Show protocol (Yes or No, X or blank):
+X
+Run in background (Yes or No, X or blank):
+X
+Codepage:
+0000
+
+-----------------------------------------------------------------------------------------------------------------------------------
+No codepage provided. Report uses system default codepage:
+4103
+
+-----------------------------------------------------------------------------------------------------------------------------------

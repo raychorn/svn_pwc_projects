@@ -1,0 +1,20 @@
+* PwCXTRACT version:PwCXTRACT Version 4.0
+* Property of PricewaterhouseCoopers WPG AG
+Data volume estimation run for ID: 9D58ADEA14
+The ID is based on system ID, client, date and time.
+
+This file includes the following content:
+1. Estimation of generated data volume for each extracted table
+2. Estimation of generated data volume overall
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Estimated data volume of extraction:
+Table               Lines               Bytes per line      Maximum filesize              Expected filesize
+BKPF                99                  548                 52,98 KB                      26,49 KB
+BSEG                198                 876                 169,38 KB                     84,69 KB
+SKAT                27.328              226                 5,89 MB                       2,95 MB
+SKA1                8.769               250                 2,09 MB                       1,05 MB
+ANLA                606                 302                 178,72 KB                     89,36 KB
+
+Total maximum filesize: 8,37 MB
+Total estimated filesize: 4,19 MB

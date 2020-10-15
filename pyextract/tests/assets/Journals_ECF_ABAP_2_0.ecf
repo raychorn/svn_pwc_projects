@@ -1,0 +1,221 @@
+{
+	"RequestId": "38033dbc-e750-45d9-9af5-f48b0cf5a2f4",
+	"PublicKeyType": null,
+	"PublicKey": "MIIFtjCCBJ6gAwIBAgITeQAAKwozQHoPqjXp6gABAAArCjANBgkqhkiG9w0BAQsFADBIMRMwEQYKCZImiZPyLGQBGRYDY29tMRMwEQYKCZImiZPyLGQBGRYDcHdjMRwwGgYDVQQDExNQd0MgU1NMIElzc3VpbmcgLSAxMB4XDTE2MTIyMTE5NTc1M1oXDTE5MDYyMTIwMDc1M1owgb0xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJGTDEOMAwGA1UEBxMFVGFtcGExIzAhBgNVBAoTGlByaWNld2F0ZXJob3VzZUNvb3BlcnMgTExQMRgwFgYDVQQLEw9BVFAgQXVyYSBHbG9iYWwxKTAnBgNVBAMTIGVpdGFzc3VhcmFuY2VrZXkucHdjaW50ZXJuYWwuY29tMScwJQYJKoZIhvcNAQkBFhhhdHBlbnZpci50ZWFtQHVzLnB3Yy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCf4A97GxNaYYc7wA8VtBN7PKuc5vpQ1JnEvKgNy+s+HQyTi7wVqgNThVHygHM4EghgY2/WyIZ5sWgbPwMIm/6+bEysWcJaz/g1jamdlsCixy4FcY4D4TAScYL+o2xd+Zsn1c4UDhw0b3NfQJ5vbVS8CMFetmyX3rXkbA0EpKpY/ZWMeLWqTLBRCcrAErZe9KNsrlGIUEN1EUKQ6KHu+qnRxYt3pwEoQ//NGYyHSG85oeKtPUv4RhY6etu3cGEk8seaiK/X0SMsvk+qphGKbyUNf7cMeqK8z7m4gYNeQfrJ8+9W99XeWhISbTCBiTuThDU+BsHqvJ8i5bwUaIpnj2CTAgMBAAGjggIhMIICHTAPBgNVHRMBAf8EBTADAgEAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4EFgQUJ+uYCBnouKqnm3TskRPg06Od7VwwHwYDVR0jBBgwFoAUFcVm3aD0uHupNhZEk0RbyNZU7QcwgZ0GA1UdHwSBlTCBkjCBj6CBjKCBiYY4aHR0cDovL2dldGNybC5wd2MuY29tL1B3QyUyMFNTTCUyMElzc3VpbmclMjAtJTIwMSgxKS5jcmyGTWh0dHA6Ly9jZXJ0ZGF0YTEucHdjaW50ZXJuYWwuY29tL0NlcnREYXRhMS9Qd0MlMjBTU0wlMjBJc3N1aW5nJTIwLSUyMDEoMSkuY3JsMIIBBgYIKwYBBQUHAQEEgfkwgfYwbgYIKwYBBQUHMAKGYmh0dHA6Ly9nZXRjcmwucHdjLmNvbS9NQVRMS1BLSTJDQVAwMDMudXMubmFtLmFkLnB3Y2ludGVybmFsLmNvbV9Qd0MlMjBTU0wlMjBJc3N1aW5nJTIwLSUyMDEoMSkuY3J0MIGDBggrBgEFBQcwAoZ3aHR0cDovL2NlcnRkYXRhMS5wd2NpbnRlcm5hbC5jb20vQ2VydERhdGExL01BVExLUEtJMkNBUDAwMy51cy5uYW0uYWQucHdjaW50ZXJuYWwuY29tX1B3QyUyMFNTTCUyMElzc3VpbmclMjAtJTIwMSgxKS5jcnQwDQYJKoZIhvcNAQELBQADggEBAFZHIbampsNh5UzQPaYOyPbElpaiVuoVHAiGKqoWa3EJVQQhmYqQEX1IRcqnv4V3KSH9Poz1yoYJ5Wj7g+MEJ20AOSM7B4oYdKJcJxUD42L45SOmRvdfmr0HmAtcD910bysUP+NJiw7IR4RqV6acaNLO8biK8M+8bYxkh6loQSxtntSz3IZq5sYbqBXzy2gdPFJ8ne3lTAfOy6JmKSpuoDbZpSqaB13NRG4+4fyWlodeokKa4wW82N+LFCAFQ5FF7CaCmbc91QfgT/YdpkHWXx/wPtgrulf1URSeygk0zoFSGXVsUxnMgSj+B0pHLRW/qp+dajZ585OwQb7YIpHklhc=",
+	"ExpiryDate": "2017-12-31T00:00:00",
+	"DataSourceId": "00000000-0000-0000-0000-000000000000",
+	"Description": null,
+	"SaveToRepository": false,
+	"EcfVersion": "2.0",
+	"ClientId": "DB_CC",
+	"ClientName": "Derek",
+	"LineOfService": "Test_LoS",
+	"Channel": "Channel_1",
+	"DataDestination": "HaloforERP",
+	"Territory": "West",
+	"AdditionalTags": "USTPA3ABSSQ199",
+	"DatabaseName": "Derek_v2_0",
+	"DatabaseServerName": "USTPA3ABSSQ199",
+	"DatabasePort": "14331",
+	"SchemaName": "SAP_Test_Schema",
+	"PwCSetId": "TestSetId",
+	"ExtractionMethod": "Direct",
+	"IsDatabaseNameRequired": false,
+	"ErpInstance": "SAP UAT",
+	"FileUploadMethod": "MFT_LFU",
+	"DataSource": {
+		"Application": "SAP",
+		"Version": "ECC 6.0",
+		"DataServer": "SAP Application Server",
+		"DataConnector": "ABAP"
+	},
+	"Queries": [{
+		"Name": "GLT0",
+		"NameAlias": "GLT0",
+		"Columns": "RCLNT,RACCT,BUKRS,RLDNR,RYEAR,RVERS,RRCTY,RBUSA,RTCUR,DRCRK,RPMAX,HSL01,HSL02,HSL03,HSL04,HSL05,HSL06,HSL07,HSL08,HSL09,HSL10,HSL11,HSL12,HSL13,HSL14,HSL15,HSL16,HSLVT,KSLVT,KSL01,KSL02,KSL03,KSL04,KSL05,KSL06,KSL07,KSL08,KSL09,KSL10,KSL11,KSL12,KSL13,KSL14,KSL15,KSL16",
+		"Parameters": [{
+			"FieldName": "BUKRS",
+			"Type": "text",
+			"Values": ["0001","0005"],
+			"Operation": "IN"
+		},
+		{
+			"FieldName": "RYEAR",
+			"Type": "text",
+			"Values": ["2013"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "FAGLFLEXT",
+		"NameAlias": "FAGLFLEXT",
+		"Columns": "RCLNT,RLDNR,RRCTY,RVERS,RBUKRS,RYEAR,RACCT,RBUSA,RTCUR,DRCRK,RPMAX,HSLVT,HSL01,HSL02,HSL03,HSL04,HSL05,HSL06,HSL07,HSL08,HSL09,HSL10,HSL11,HSL12,OBJNR00,OBJNR01,OBJNR02,OBJNR03,OBJNR04,OBJNR05,OBJNR06,OBJNR07,OBJNR08,KSLVT,KSL01,KSL02,KSL03,KSL04,KSL05,KSL06,KSL07,KSL08,KSL09,KSL10,KSL11,KSL12,KSL13,KSL14,KSL15,KSL16",
+		"Parameters": [{
+			"FieldName": "RBUKRS",
+			"Type": "text",
+			"Values": ["0001","0005","1000","2000","3000","7000","0006","PS01","2200","ACIA","R300","S300"],
+			"Operation": "IN"
+		},
+		{
+			"FieldName": "RYEAR",
+			"Type": "text",
+			"Values": ["2013","2002","2003","2004","2005","1994"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "SKA1",
+		"NameAlias": "SKA1",
+		"Columns": "MANDT,KTOPL,SAKNR,XBILK",
+		"Parameters": []		
+	},
+	{
+		"Name": "SKAT",
+		"NameAlias": "SKAT",
+		"Columns": "MANDT,KTOPL,SAKNR,TXT50,SPRAS",
+		"Parameters": [{
+			"FieldName": "SPRAS",
+			"Type": "text",
+			"Values": ["EN"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "T001",
+		"NameAlias": "T001",
+		"Columns": "MANDT,BUKRS,KTOPL,PERIV,BUTXT",
+		"Parameters": []
+	},
+	{
+		"Name": "T003",
+		"NameAlias": "T003",
+		"Columns": "MANDT,BLART,XSYBL",
+		"Parameters": []
+	},
+	{
+		"Name": "T003T",
+		"NameAlias": "T003T",
+		"Columns": "MANDT,BLART,LTEXT,SPRAS",
+		"Parameters": [{
+			"FieldName": "SPRAS",
+			"Type": "text",
+			"Values": ["EN"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "T009",
+		"NameAlias": "T009",
+		"Columns": "MANDT,PERIV,XKALE,XJABH,ANZBP,ANZSP",
+		"Parameters": []
+	},
+	{
+		"Name": "TBSLT",
+		"NameAlias": "TBSLT",
+		"Columns": "MANDT,BSCHL,UMSKZ,LTEXT,SPRAS",
+		"Parameters": [{
+			"FieldName": "SPRAS",
+			"Type": "text",
+			"Values": ["EN"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "TJ01T",
+		"NameAlias": "TJ01T",
+		"Columns": "VRGNG,TXT,SPRAS",
+		"Parameters": [{
+			"FieldName": "SPRAS",
+			"Type": "text",
+			"Values": ["EN"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "TSTCT",
+		"NameAlias": "TSTCT",
+		"Columns": "TCODE,TTEXT,SPRSL",
+		"Parameters": [{
+			"FieldName": "SPRSL",
+			"Type": "text",
+			"Values": ["EN"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "TTYPT",
+		"NameAlias": "TTYPT",
+		"Columns": "AWTYP,OTEXT,SPRAS",
+		"Parameters": [{
+			"FieldName": "SPRAS",
+			"Type": "text",
+			"Values": ["EN"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "USR02",
+		"NameAlias": "USR02",
+		"Columns": "MANDT,BNAME,USTYP",
+		"Parameters": []		
+	},
+	{
+		"Name": "BKPF",
+		"NameAlias": "BKPF",
+		"Columns": "MANDT,BUKRS,BELNR,GJAHR,MONAT,TCODE,GLVOR,AWTYP,BUDAT,CPUDT,USNAM,PPNAM,WAERS,UPDDT,BKTXT,BLART,HWAER,STBLG,BSTAT,CPUTM,AEDAT,DBBLG,STJAH,BRNCH,KURSF,XRUEB,XSTOV,AUSBK,XNETB,XBLNR,HWAE2,BLDAT,WWERT,GRPID,BVORG,AWKEY,XREVERSAL",
+		"Parameters": [{
+			"FieldName": "BUKRS",
+			"Type": "text",
+			"Values": ["0001","0005"],
+			"Operation": "IN"
+		},
+		{
+			"FieldName": "BUDAT",
+			"Type": "text",
+			"Values": ["20130327","20130410"],
+			"Operation": "RANGE"
+		},
+		{
+			"FieldName": "GJAHR",
+			"Type": "text",
+			"Values": ["2013"],
+			"Operation": "IN"
+		}
+		]		
+	},
+	{
+		"Name": "BSEG",
+		"NameAlias": "BSEG",
+		"Columns": "MANDT,BUKRS,BELNR,GJAHR,BUZEI,XAUTO,DMBTR,WRBTR,SHKZG,PSWBT,HKONT,BSCHL,UMSKZ,PRCTR,KOSTL,LIFNR,EBELN,SGTXT,XNEGP,BUZID,AUGDT,AUGCP,AUGBL,KOART,BEWAR,ALTKT,VORGN,DMBE2,SAKNR,ANFBU,KTOSL,VBELN,PSWSL,KOKRS,GSBER,VNAME,ZUONR,KUNNR,MATNR,WERKS,MENGE,MEINS,ANBWA,DMBE3",
+		"ParentInfo":[{
+			"ParentTableName": "BKPF",
+			"ParentTableAlias": "BKPF",
+			"JoinFields":[{
+					"ParentFields": "BUKRS,BELNR,GJAHR",
+					"ChildFields": "BUKRS,BELNR,GJAHR"
+				}
+			]
+		}]		
+	},
+	{
+		"Name": "ADRP",
+		"NameAlias": "ADRP",
+		"Columns": "CLIENT,PERSNUMBER,DATE_FROM,NATION,NAME_FIRST,NAME_LAST",
+		"Parameters": []		
+	},
+	{
+		"Name": "USR21",
+		"NameAlias": "USR21",
+		"Columns": "MANDT,BNAME,PERSNUMBER",
+		"Parameters": []		
+	}
+	]
+}

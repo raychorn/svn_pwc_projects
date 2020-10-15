@@ -1,0 +1,15 @@
+!.gitignore
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/chrome.dll
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/chrome_child.dll
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/icudtl.dat
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/nacl64.exe
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/nacl_irt_x86_64.nexe
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/resources.pak
+pyextract/chrome/App/Chrome-bin/57.0.2987.133/WidevineCdm/_platform_specific/win_x86/widevinecdm.dll
+pyextract/chrome/Data/profile/PepperFlash/27.0.0.130/pepflashplayer.dll
+pyextract/chrome/Data/profile/pnacl/0.57.44.2492/_platform_specific/x86_64/pnacl_public_x86_64_pnacl_llc_nexe
+pyextract/chrome/Data/profile/Safe Browsing Bloom
+pyextract/chrome/Data/profile/ShaderCache/GPUCache/data_3
+pyextract/chrome/Data/profile/SwiftShader/3.3.0.1/libGLESv2.dll
+pyextract/tests/assets/abap_138DA2DF4F/138DA2DF4F_ADRP_1.fil
+pyextract/tests/assets/abap_138DA2DF4F/138DA2DF4F_TSTCT_1.fil

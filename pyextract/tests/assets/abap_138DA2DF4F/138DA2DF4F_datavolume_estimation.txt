@@ -1,0 +1,32 @@
+* PwCXTRACT version:PwCXTRACT Version 4.0
+* Property of PricewaterhouseCoopers WPG AG
+Data volume estimation run for ID: 138DA2DF4F
+The ID is based on system ID, client, date and time.
+
+This file includes the following content:
+1. Estimation of generated data volume for each extracted table
+2. Estimation of generated data volume overall
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Estimated data volume of extraction:
+Table               Lines               Bytes per line      Maximum filesize              Expected filesize
+BKPF                40                  564                 22,03 KB                      11,02 KB
+BSEG                85                  710                 58,94 KB                      29,47 KB
+T001                158                 76                  11,73 KB                      5,86 KB
+TBSLT               141                 54                  7,44 KB                       3,72 KB
+TSTCT               94.747              114                 10,30 MB                      6,70 MB
+ADRP                318.842             204                 62,03 MB                      40,32 MB
+SKA1                14.252              36                  501,05 KB                     250,52 KB
+USR02               13.528              32                  422,75 KB                     211,38 KB
+TTYPT               131                 52                  6,65 KB                       3,33 KB
+GLT0                0                   1.100               0,00 B                        0,00 B
+T003                58                  12                  696,00 B                      348,00 B
+USR21               13.754              50                  671,58 KB                     335,79 KB
+T009                23                  24                  552,00 B                      276,00 B
+SKAT                27.328              136                 3,54 MB                       1,77 MB
+TJ01T               1.972               70                  134,80 KB                     67,40 KB
+FAGLFLEXT           67.884              1.624               105,14 MB                     68,34 MB
+T003T               74                  52                  3,76 KB                       1,88 KB
+
+Total maximum filesize: 182,81 MB
+Total estimated filesize: 118,03 MB

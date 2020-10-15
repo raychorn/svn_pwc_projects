@@ -1,0 +1,28 @@
+@ACL900
+
+^LAYOUT   TBSLT                              30   D,T.
+MANDT               ASCII       1   3 AS "Client"
+BSCHL               ASCII       4   2 AS "Posting Key"
+UMSKZ               ASCII       6   1 AS "Special G/L Indicator"
+LTEXT               ASCII       7  20 AS "Name of the Posting Key"
+SPRAS               ASCII      27   2 AS "Language Key"
+
+^LAYOUT   TSTCT                              60   D,T.
+TCODE               ASCII       1  20 AS "Transaction Code"
+TTEXT               ASCII      21  36 AS "Transaction Text"
+SPRSL               ASCII      57   2 AS "Language Key"
+
+^LAYOUT   ADRP                               106  D,T.
+CLIENT              ASCII       1   3 AS "Client"
+PERSNUMBER          ASCII       4  10 AS "Person number"
+DATE_FROM           DATE       14  10 PICTURE "YYYYMMDD" AS "Valid-from date - in current Release only 00010101 possible"
+NATION              ASCII      24   1 AS "Version ID for International Addresses"
+NAME_FIRST          ASCII      25  40 AS "First name"
+NAME_LAST           ASCII      65  40 AS "Last name"
+
+
+^FORMAT   TBSLT                              TBSLT                              "" "138DA2DF4F_TBSLT_1.fil" 0 ASCII CRLF
+
+^FORMAT   TSTCT                              TSTCT                              "" "138DA2DF4F_TSTCT_1.fil" 0 ASCII CRLF
+
+^FORMAT   ADRP                               ADRP                               "" "138DA2DF4F_ADRP_1.fil" 0 ASCII CRLF
